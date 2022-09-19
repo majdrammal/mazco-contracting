@@ -1,14 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bevan&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Cairo", sans-serif;
+  font-family: "Dosis", sans-serif;
   text-transform: uppercase;
-}
-
-.App {
-  position: relative;
 }
 
 a {
@@ -24,8 +21,8 @@ a::after {
   right: 0;
   height: 0.5px;
   width: 0;
-  background-color: white;
-  border: 0.5px solid white;
+  background-color: black;
+  border: 0.5px solid black;
   transition: all 300ms ease;
   visibility: hidden;
 }
@@ -54,10 +51,7 @@ button:hover {
 
 /* NAV */
 nav {
-  position: absolute;
-  z-index: 10;
-  top: 10px;
-  left: 0;
+  height: 80px;
   width: 100%;
 }
 nav .container {
@@ -68,20 +62,25 @@ nav .container {
   justify-content: space-between;
 }
 nav .container img {
-  opacity: 0.5;
   transition: all 300ms ease;
   cursor: pointer;
+  width: 100px;
+  height: 100px;
+  z-index: 10;
+  margin-top: 10px;
+  filter: grayscale(100);
 }
 nav .container img:hover {
   opacity: 1;
 }
 nav .container a {
+  font-weight: 800;
   margin-left: 20px;
-  color: rgba(255, 255, 255, 0.36);
+  color: black;
   font-size: 18px;
 }
 nav .container a:visited {
-  color: rgba(255, 255, 255, 0.36);
+  color: black;
 }
 nav .container a:hover {
   color: white;
@@ -90,48 +89,53 @@ nav .container a:hover {
 /* HEADER */
 #header {
   width: 100%;
-  height: 100vh;
+  height: calc(100vh - 80px);
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/header-bg.jpg);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
+  background-color: white;
 }
-#header div {
-  width: 90%;
+#header img {
+  width: 100%;
+  height: 60vh;
+  margin-top: 60px;
+}
+#header .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #header h1 {
-  color: white;
-  font-size: 80px;
+  color: black;
+  font-size: 40px;
   text-align: center;
   line-height: 4rem;
+  font-weight: 200;
+}
+#header .large {
+  font-size: 60px;
+  font-family: "Bevan", cursive;
 }
 #header h2 {
-  color: rgba(255, 255, 255, 0.36);
+  color: black;
   text-align: center;
-}
-#header button {
-  margin-top: 15px;
+  font-size: 20px;
 }
 
 /* ABOUT */
 #about {
-  background-color: #442B17;
+  background-color: black;
   width: 100%;
 }
 #about .container {
   width: 60%;
   margin: 0 auto;
-  padding: 50px 20px;
+  padding: 50px 20px 60px 20px;
 }
 #about .container p {
-  color: rgba(255, 255, 255, 0.36);
+  color: black;
 }
 #about .container h2 {
   font-size: 40px;
@@ -162,19 +166,41 @@ nav .container a:hover {
   width: -moz-fit-content;
   width: fit-content;
   font-size: 40px;
-  color: #442B17;
-  border-bottom: 0.1px solid #442B17;
+  color: black;
+  border-bottom: 0.1px solid black;
   padding-bottom: 10px;
+}
+#services .container h3 {
+  align-self: flex-start;
+  font-size: 40px;
+  color: black;
 }
 #services .container .services__wrapper {
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  white-space: nowrap;
+  width: 90%;
+  margin: 0 auto;
+  scrollbar-width: auto;
+  scrollbar-color: #515151 black;
+}
+#services .container .services__wrapper::-webkit-scrollbar {
+  height: 10px;
+}
+#services .container .services__wrapper::-webkit-scrollbar-track {
+  background: lightgray;
+}
+#services .container .services__wrapper::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+#services .container .services__wrapper::-webkit-scrollbar-thumb:hover {
+  background-color: black;
 }
 #services .container .service {
   text-align: center;
-  width: 300px;
+  min-width: 300px;
+  max-width: 300px;
   margin: 40px 40px;
   border-radius: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
@@ -187,29 +213,29 @@ nav .container a:hover {
 }
 #services .container .service h3 {
   font-size: 30px;
-  color: #442B17;
+  color: black;
 }
 #services .container .service p {
   width: 80%;
   margin: 0 auto;
-  color: #442B17;
+  color: black;
 }
 #services .container .service button {
   margin: 20px 0;
   background-color: transparent;
-  border: 1px solid #442B17;
-  color: #442B17;
+  border: 1px solid black;
+  color: black;
   transition: all 300ms ease;
 }
 #services .container .service button:hover {
   transform: scale(1);
-  background-color: #442B17;
+  background-color: black;
   color: white;
 }
 
 /* CONTACT */
 #contact {
-  padding: 40px 0;
+  padding: 30px 0 50px 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.bakersteeltrading.co.uk/wp-content/uploads/2020/02/mild-steel-rods-1024x768.jpg");
   background-attachment: fixed;
   background-size: cover;
@@ -248,13 +274,13 @@ nav .container a:hover {
   margin-bottom: 20px;
 }
 #contact .container .contact__mobile .contact__method .fa-phone {
-  color: #442B17;
+  color: black;
   margin-right: 20px;
   font-size: 35px;
   margin-left: 10px;
 }
 #contact .container .contact__mobile .contact__method .fa-whatsapp, #contact .container .contact__mobile .contact__method .fa-envelope {
-  color: #442B17;
+  color: black;
   font-size: 45px;
   margin-right: 20px;
 }
@@ -263,10 +289,10 @@ nav .container a:hover {
   margin-right: 20px;
 }
 #contact .container .contact__mobile .contact__method h3 {
-  color: #442B17;
+  color: black;
 }
 #contact .container .contact__mobile .contact__method h2 {
-  color: #ad703e;
+  color: black;
   margin: 5px 0 0 0;
   font-size: 20px;
   transition: all 300ms ease;
@@ -278,13 +304,13 @@ nav .container a:hover {
   margin-top: 15px;
   margin-left: 15px;
   background-color: transparent;
-  border: 1px solid #ad703e;
-  color: #ad703e;
+  border: 1px solid black;
+  color: black;
   transition: all 300ms ease;
 }
 #contact .container .contact__mobile .contact__method button:hover {
   transform: scale(1);
-  background-color: #ad703e;
+  background-color: black;
   color: white;
 }
 #contact .container .contact__mobile .contact__method a:hover::after {
@@ -302,7 +328,7 @@ nav .container a:hover {
 #contact form h3 {
   font-size: 25px;
   margin: 20px 0;
-  color: #442B17;
+  color: black;
 }
 #contact form input, #contact form textarea {
   margin-bottom: 10px;
@@ -322,20 +348,35 @@ nav .container a:hover {
 }
 #contact form button {
   background-color: transparent;
-  border: 1px solid #ad703e;
-  color: #ad703e;
+  border: 1px solid black;
+  color: black;
   transition: all 300ms ease;
 }
 #contact form button:hover {
   transform: scale(1);
-  background-color: #ad703e;
+  background-color: black;
   color: white;
+}
+@media (max-width: 1000px) {
+  #contact .contact__options {
+    flex-direction: column;
+  }
+  #contact .contact__options .contact__mobile {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  #contact .contact__options .contact__mobile .contact__method {
+    margin-right: 0;
+  }
+  #contact form {
+    width: 100%;
+  }
 }
 
 /* FOOTER */
 #footer {
   text-align: center;
-  background-color: #ad703e;
+  background-color: black;
   padding: 20px 10px;
 }
 #footer img {
@@ -347,6 +388,12 @@ nav .container a:hover {
   opacity: 1;
 }
 #footer p {
-  color: rgba(255, 255, 255, 0.36);
+  color: black;
   font-size: 12px;
+}
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 50px !important;
+  }
 }/*# sourceMappingURL=App.css.map */
