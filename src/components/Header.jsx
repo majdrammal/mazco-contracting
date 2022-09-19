@@ -6,7 +6,7 @@ const Header = () => {
         <div id="header">
             <div>
                 <h1>Mazco Contracting</h1>
-                <h2>Providing Steel Kaza Kaza Kaza</h2>
+                <h2>Partnerships forged with steel</h2>
                 <button>Contact Us</button>
             </div>
         </div>

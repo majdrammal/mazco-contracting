@@ -4,6 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Cairo", sans-serif;
+  text-transform: uppercase;
 }
 
 .App {
@@ -51,11 +52,6 @@ button:hover {
   transform: scale(0.95);
 }
 
-a {
-  text-decoration: none;
-  transition: all 300ms ease;
-}
-
 /* NAV */
 nav {
   position: absolute;
@@ -72,7 +68,7 @@ nav .container {
   justify-content: space-between;
 }
 nav .container img {
-  opacity: 0.7;
+  opacity: 0.5;
   transition: all 300ms ease;
   cursor: pointer;
 }
@@ -105,30 +101,252 @@ nav .container a:hover {
   background-position: center;
 }
 #header div {
+  width: 90%;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 #header h1 {
   color: white;
-  font-size: 70px;
+  font-size: 80px;
   text-align: center;
   line-height: 4rem;
-  text-transform: uppercase;
 }
 #header h2 {
   color: rgba(255, 255, 255, 0.36);
   text-align: center;
-  text-transform: uppercase;
 }
 #header button {
   margin-top: 15px;
-  text-transform: uppercase;
 }
 
 /* ABOUT */
 #about {
-  height: 30vh;
   background-color: #442B17;
   width: 100%;
+}
+#about .container {
+  width: 60%;
+  margin: 0 auto;
+  padding: 50px 20px;
+}
+#about .container p {
+  color: rgba(255, 255, 255, 0.36);
+}
+#about .container h2 {
+  font-size: 40px;
+  color: white;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 0.5px solid white;
+}
+#about .container h3 {
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.63);
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/* SERVICES */
+#services .container {
+  padding: 40px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#services .container h2 {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 40px;
+  color: #442B17;
+  border-bottom: 0.1px solid #442B17;
+  padding-bottom: 10px;
+}
+#services .container .services__wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#services .container .service {
+  text-align: center;
+  width: 300px;
+  margin: 40px 40px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+#services .container .service img {
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
+  width: 100%;
+  height: 200px;
+}
+#services .container .service h3 {
+  font-size: 30px;
+  color: #442B17;
+}
+#services .container .service p {
+  width: 80%;
+  margin: 0 auto;
+  color: #442B17;
+}
+#services .container .service button {
+  margin: 20px 0;
+  background-color: transparent;
+  border: 1px solid #442B17;
+  color: #442B17;
+  transition: all 300ms ease;
+}
+#services .container .service button:hover {
+  transform: scale(1);
+  background-color: #442B17;
+  color: white;
+}
+
+/* CONTACT */
+#contact {
+  padding: 40px 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://www.bakersteeltrading.co.uk/wp-content/uploads/2020/02/mild-steel-rods-1024x768.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+}
+#contact .container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#contact .container h2 {
+  font-size: 40px;
+  color: white;
+  margin-bottom: 40px;
+}
+#contact .container .contact__options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+#contact .container .contact__mobile {
+  width: 50%;
+}
+#contact .container .contact__mobile .contact__method {
+  display: flex;
+  margin-right: 30px;
+  align-items: center;
+  height: 150px;
+  padding: 30px 50px;
+  box-shadow: rgba(0, 0, 0, 0.178) 0px 4px 12px;
+  background-color: white;
+}
+#contact .container .contact__mobile .contact__method:not(:last-child) {
+  margin-bottom: 20px;
+}
+#contact .container .contact__mobile .contact__method .fa-phone {
+  color: #442B17;
+  margin-right: 20px;
+  font-size: 35px;
+  margin-left: 10px;
+}
+#contact .container .contact__mobile .contact__method .fa-whatsapp, #contact .container .contact__mobile .contact__method .fa-envelope {
+  color: #442B17;
+  font-size: 45px;
+  margin-right: 20px;
+}
+#contact .container .contact__mobile .contact__method .fa-envelope {
+  font-size: 40px;
+  margin-right: 20px;
+}
+#contact .container .contact__mobile .contact__method h3 {
+  color: #442B17;
+}
+#contact .container .contact__mobile .contact__method h2 {
+  color: #ad703e;
+  margin: 5px 0 0 0;
+  font-size: 20px;
+  transition: all 300ms ease;
+}
+#contact .container .contact__mobile .contact__method h2:hover {
+  transform: scale(0.95);
+}
+#contact .container .contact__mobile .contact__method button {
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: transparent;
+  border: 1px solid #ad703e;
+  color: #ad703e;
+  transition: all 300ms ease;
+}
+#contact .container .contact__mobile .contact__method button:hover {
+  transform: scale(1);
+  background-color: #ad703e;
+  color: white;
+}
+#contact .container .contact__mobile .contact__method a:hover::after {
+  visibility: hidden;
+}
+#contact form {
+  width: 50%;
+  height: 490px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.178) 0px 4px 12px;
+  padding: 30px 50px;
+  background-color: white;
+}
+#contact form h3 {
+  font-size: 25px;
+  margin: 20px 0;
+  color: #442B17;
+}
+#contact form input, #contact form textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(142, 142, 142, 0.065);
+  border: none;
+  outline: none;
+  transition: all 300ms ease;
+}
+#contact form input:hover, #contact form input:focus, #contact form textarea:hover, #contact form textarea:focus {
+  background-color: rgba(142, 142, 142, 0.164);
+}
+#contact form textarea {
+  min-height: 100px;
+  max-height: 100px;
+}
+#contact form button {
+  background-color: transparent;
+  border: 1px solid #ad703e;
+  color: #ad703e;
+  transition: all 300ms ease;
+}
+#contact form button:hover {
+  transform: scale(1);
+  background-color: #ad703e;
+  color: white;
+}
+
+/* FOOTER */
+#footer {
+  text-align: center;
+  background-color: #ad703e;
+  padding: 20px 10px;
+}
+#footer img {
+  opacity: 0.5;
+  transition: all 300ms ease;
+  cursor: pointer;
+}
+#footer img:hover {
+  opacity: 1;
+}
+#footer p {
+  color: rgba(255, 255, 255, 0.36);
+  font-size: 12px;
 }/*# sourceMappingURL=App.css.map */
