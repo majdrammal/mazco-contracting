@@ -11,7 +11,7 @@
 
 // colors
 $white: white;
-$lightgray: black;
+$lightgray: rgba(85, 85, 85, 0.723);
 $theme: black;
 $themealt: black;
 
@@ -77,8 +77,8 @@ nav {
         img {
             transition: $fast;
             cursor: pointer;
-            width: 100px;
-            height: 100px;
+            width: 80px;
+            height: 80px;
             z-index: 10;
             margin-top: 10px;
             filter: grayscale(100);
@@ -96,10 +96,6 @@ nav {
 
             &:visited {
                 color: $lightgray;
-            }
-
-            &:hover {
-                color: white;
             }
         }
     }
@@ -173,6 +169,7 @@ nav {
             font-size: 40px;
             color: $white;
             width: fit-content;
+            padding-bottom: 5px;
             border-bottom: 0.5px solid $white;
         }
 
@@ -217,7 +214,7 @@ nav {
             overflow-y: hidden;
             white-space: nowrap;
             width: 90%;
-            margin: 0 auto;
+            margin: 0 auto 30px auto;
             scrollbar-width: auto;
             scrollbar-color: #515151 $themealt;
               
@@ -239,33 +236,41 @@ nav {
         }
 
         .service {
+            position: relative;
             text-align: center;
             min-width: 300px;
             max-width: 300px;
             margin: 40px 40px;
-            border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
             img {
-                border-top-right-radius: 10px;
-                border-top-left-radius: 10px;
                 width: 100%;
                 height: 200px;
+            }
+
+            p {
+                background-color: white;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                padding: 10px;
+                height: 200px;
+                white-space: normal;
+                text-align: left;
+                font-size: 18px;
+                transform: scale(0);
+                border-bottom: 0.5px solid $theme;
             }
 
             h3 {
                 font-size: 30px;
                 color: $theme;
-            }
-
-            p {
-                width: 80%;
-                margin: 0 auto;
-                color: $theme;
+                margin-top: 10px;
             }
 
             button {
-                margin: 20px 0;
+                margin: 10px 0 20px 0;
                 background-color: transparent;
                 border: 1px solid $theme;
                 color: $theme;
@@ -276,6 +281,13 @@ nav {
                     background-color: $theme;
                     color: $white;
                 }
+            }
+        }
+
+        .service__para--on {
+            
+            p {
+                transform: scale(1);
             }
         }
     }
@@ -348,7 +360,7 @@ nav {
                 }
     
                 h2 {
-                    color: $themealt;
+                    color: $lightgray;
                     margin: 5px 0 0 0;
                     font-size: 20px;
                     transition: all 300ms ease;
@@ -360,7 +372,7 @@ nav {
 
                 button {
                     margin-top: 15px;
-                    margin-left: 15px;
+                    margin-left: 10px;
                     background-color: transparent;
                     border: 1px solid $themealt;
                     color: $themealt;
@@ -399,7 +411,7 @@ nav {
         }
           
         input, textarea {
-            margin-bottom: 10px;
+            margin-bottom: 20px;
             width: 100%;
             padding: 10px;
             background-color: rgba(142, 142, 142, 0.065);
@@ -462,17 +474,15 @@ nav {
     padding: 20px 10px;
 
     img {
-        opacity: 0.5;
         transition: $fast;
         cursor: pointer;
-
-        &:hover {
-            opacity: 1;
-        }
+        filter: brightness(100);
     }
 
     p {
-        color: $lightgray;
+        margin-top: 20px;
+        color: $white;
+        opacity: 0.6;
         font-size: 12px;
     }
 }
