@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import bg from '../assets/header-bg2.png'
+import Stocks from './Stocks';
 
 const Header = () => {
     let array = ['deliver', 'manufacture', 'trade']
@@ -26,6 +27,7 @@ const Header = () => {
                 <h2>Steel</h2>
                 {/* <img src={bg} alt="" /> */}
             </div>
+            <Stocks />
         </div>
     );
 }

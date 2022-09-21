@@ -105,7 +105,7 @@ nav .container a:visited {
 /* HEADER */
 #header {
   width: 100%;
-  height: 100vh;
+  height: 85vh;
   position: relative;
   display: flex;
   align-items: center;
@@ -129,6 +129,7 @@ nav .container a:visited {
   font-size: 60px;
 }
 #header h2 {
+  text-align: center;
   color: white;
   font-size: 60px;
   font-weight: 400;
@@ -141,19 +142,24 @@ nav .container a:visited {
 
 /* STOCKS */
 #stocks {
-  position: relative;
+  position: absolute;
+  bottom: -82.5px;
+  left: 50%;
+  transform: translate(-50%);
 }
 #stocks .stocks {
-  position: absolute;
-  top: -700px;
-  right: 150px;
+  display: flex;
 }
 #stocks .stock {
-  background-color: rgba(0, 0, 0, 0.384);
+  background-color: rgba(255, 255, 255, 0.384);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   padding: 10px 20px;
   width: 350px;
-  margin-bottom: 40px;
+  height: 170px;
+  margin-right: 40px;
+}
+#stocks .stock:last-child {
+  margin-right: 0;
 }
 #stocks .stock p {
   color: rgb(144, 33, 33);
@@ -172,10 +178,10 @@ nav .container a:visited {
   color: white;
 }
 #stocks .stock .high {
-  color: green;
+  color: rgb(107, 169, 107);
 }
 #stocks .stock .low {
-  color: red;
+  color: rgb(222, 113, 113);
 }
 
 /* ABOUT */
@@ -186,9 +192,11 @@ nav .container a:visited {
 #about .container {
   width: 60%;
   margin: 0 auto;
-  padding: 50px 20px 60px 20px;
+  padding: 135px 20px 60px 20px;
 }
 #about .container p {
+  border-top: 1px solid rgba(255, 255, 255, 0.336);
+  padding-top: 40px;
   color: rgba(85, 85, 85, 0.723);
 }
 #about .container h2 {
@@ -198,7 +206,6 @@ nav .container a:visited {
   width: -moz-fit-content;
   width: fit-content;
   padding-bottom: 5px;
-  border-bottom: 0.5px solid white;
 }
 #about .container h3 {
   margin-top: 10px;
@@ -359,7 +366,7 @@ nav .container a:visited {
   color: black;
 }
 #contact .container .contact__mobile .contact__method h2 {
-  color: rgba(85, 85, 85, 0.723);
+  color: rgb(144, 33, 33);
   margin: 5px 0 0 0;
   font-size: 20px;
   transition: all 300ms ease;
@@ -446,13 +453,20 @@ nav .container a:visited {
   background-color: black;
   padding: 20px 10px;
 }
-#footer img {
-  transition: all 300ms ease;
-  cursor: pointer;
-  filter: brightness(100);
+#footer h1 {
+  color: rgb(144, 33, 33);
+  font-size: 50px;
+  letter-spacing: 10px;
+  font-weight: 800;
+}
+#footer h6 {
+  color: rgba(255, 255, 255, 0.507);
+  font-size: 21px;
+  line-height: 0px;
+  letter-spacing: 3.75px;
 }
 #footer p {
-  margin-top: 20px;
+  margin-top: 40px;
   color: white;
   opacity: 0.6;
   font-size: 12px;
