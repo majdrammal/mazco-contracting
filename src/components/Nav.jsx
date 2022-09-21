@@ -5,13 +5,17 @@ const Nav = () => {
     return (
         <nav>
             <div className="container">
-                <img src={logo} alt="" />
+                <div className="nav__title">
+                    <h1>Solid</h1>
+                    <h6>Contracting</h6>
+                </div>
                 <ul>
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
                     <a href="#projects">Project</a>
                     <a href="#contact">Contact</a>
+                    <h4>33 7 29</h4>
                 </ul>
             </div>
         </nav>
