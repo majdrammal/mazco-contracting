@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import bg from '../assets/header-bg2.png'
 
 const Header = () => {
-
     let array = ['deliver', 'manufacture', 'trade']
     let i = 0
 
@@ -32,5 +31,3 @@ const Header = () => {
 }
 
 export default Header;
-
-// manufacture steel, trade steel

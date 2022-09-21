@@ -9,7 +9,12 @@
     text-transform: uppercase;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 // colors
+$red: rgb(144, 33, 33);
 $white: white;
 $lightgray: rgba(85, 85, 85, 0.723);
 $theme: white;
@@ -29,7 +34,7 @@ a {
 a::after {
     content: "";
     position: absolute;
-    bottom: -1px;
+    bottom: -15px;
     right: 0;
     height: 0.5px;
     width: 0;
@@ -49,7 +54,7 @@ button {
     width: 150px;
     padding: 10px 10px;
     font-size: 18px;
-    border: 1px solid $white;
+    border: 1px solid $theme;
     background-color: rgba(255, 255, 255, 0.086);
     color: $white;
     font-weight: 700;
@@ -82,18 +87,18 @@ nav {
         justify-content: space-between;
 
         h1 {
-            color: rgb(144, 33, 33);
-            font-size: 40px;
+            color: $red;
+            font-size: 50px;
             letter-spacing: 10px;
             font-weight: 800;
-            font-family: 'Bevan', cursive;
+            // font-family: 'Bevan', cursive;
         }
 
         h6 {
             color: rgba(255, 255, 255, 0.507);
             font-size: 21px;
             line-height: 0px;
-            letter-spacing: 6px;
+            letter-spacing: 3.75px;
         }
 
         h4 {
@@ -137,7 +142,7 @@ nav {
 
 #header {
     width: 100%;
-    height: calc(85vh);
+    height: calc(100vh);
     position: relative;
     display: flex;
     // justify-content: center;
@@ -179,15 +184,66 @@ nav {
     }
 
     h2:nth-child(2n) {
-        color:rgb(144, 33, 33);
+        color:$red;
+        font-weight: 600;
     }
 
 }
 
+/* STOCKS */
+
+#stocks {
+    position: relative;
+    
+    .stocks {
+        position: absolute;
+        top: -700px;
+        right: 150px;
+    }
+
+    .stock {
+        background-color: rgba(0, 0, 0, 0.384);
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        padding: 10px 20px;
+        width: 350px;
+        margin-bottom: 40px;
+
+        p {
+            color: $red;
+            font-weight: 700;
+        }
+
+        h1 {
+            color: $theme;
+        }
+
+        h4 {
+            color: $theme
+        }
+
+        span {
+            margin-left: 10px;
+        }
+
+        .open {
+            color: $theme;
+        }
+
+        .high {
+            color: green;
+        }
+
+        .low {
+            color: red;
+        }
+    }
+}
+
+
 /* ABOUT */
 
 #about {
-    background-color: $theme; //343433/442B17
+    background-color: black; //343433/442B17
     width: 100%;
 
     .container {
@@ -231,15 +287,15 @@ nav {
         h2 {
             width: fit-content;
             font-size: 40px;
-            color: $theme;
-            border-bottom: 0.1px solid $theme;
+            color: $themealt;
+            border-bottom: 0.1px solid $themealt;
             padding-bottom: 10px;
         }
 
         h3 {
             align-self: flex-start;
             font-size: 40px;
-            color: $themealt;
+            color: $lightgray;
         }
 
         .services__wrapper {
@@ -265,7 +321,7 @@ nav {
             }
             
             &::-webkit-scrollbar-thumb:hover {
-                background-color: $theme;
+                background-color: $themealt;
             }
         }
 
@@ -283,7 +339,7 @@ nav {
             }
 
             p {
-                background-color: white;
+                background-color: $themealt;
                 position: absolute;
                 top: 0;
                 left: 0;
@@ -294,26 +350,27 @@ nav {
                 text-align: left;
                 font-size: 18px;
                 transform: scale(0);
-                border-bottom: 0.5px solid $theme;
+                color: $theme;
+                border-bottom: 0.5px solid $themealt;
             }
 
             h3 {
                 font-size: 30px;
-                color: $theme;
+                color: $themealt;
                 margin-top: 10px;
             }
 
             button {
                 margin: 10px 0 20px 0;
                 background-color: transparent;
-                border: 1px solid $theme;
-                color: $theme;
+                border: 1px solid $themealt;
+                color: $themealt;
                 transition: $fast;
 
                 &:hover {
                     transform: scale(1);
-                    background-color: $theme;
-                    color: $white;
+                    background-color: $themealt;
+                    color: $theme;
                 }
             }
         }
@@ -365,21 +422,21 @@ nav {
                 height: 150px;
                 padding: 30px 50px;
                 box-shadow: rgba(0, 0, 0, 0.178) 0px 4px 12px;
-                background-color: $white;
+                background-color: $theme;
             
                 &:not(:last-child) {
                     margin-bottom: 20px;
                 }
 
                 .fa-phone {
-                    color: $theme;
+                    color: $themealt;
                     margin-right: 20px;
                     font-size: 35px;
                     margin-left: 10px;
                 }
                 
                 .fa-whatsapp, .fa-envelope {
-                    color: $theme;
+                    color: $themealt;
                     font-size: 45px;
                     margin-right: 20px;
                 }
@@ -390,7 +447,7 @@ nav {
                 }
 
                 h3 {
-                    color: $theme;
+                    color: $themealt;
                 }
     
                 h2 {
@@ -436,12 +493,12 @@ nav {
         flex-direction: column;
         box-shadow: rgba(0, 0, 0, 0.178) 0px 4px 12px;
         padding: 30px 50px;
-        background-color: $white;
+        background-color: $theme;
 
         h3 {
             font-size: 25px;
             margin: 20px 0;
-            color: $theme;
+            color: $themealt;
         }
           
         input, textarea {
