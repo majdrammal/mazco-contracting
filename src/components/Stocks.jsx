@@ -190,26 +190,58 @@ const Stocks = () => {
         }
     };
 
-    const [stockPriceOpen, setStockPriceOpen] = useState("")
-    const [stockPriceHigh, setStockPriceHigh] = useState("")
-    const [stockPriceLow, setStockPriceLow] = useState("")
+    const [stockPriceOpenGold, setStockPriceOpenGold] = useState("")
+    const [stockPriceHighGold, setStockPriceHighGold] = useState("")
+    const [stockPriceLowGold, setStockPriceLowGold] = useState("")
+    const [stockPriceOpenSteel, setStockPriceOpenSteel] = useState("")
+    const [stockPriceHighSteel, setStockPriceHighSteel] = useState("")
+    const [stockPriceLowSteel, setStockPriceLowSteel] = useState("")
+    const [stockPriceOpenSilver, setStockPriceOpenSilver] = useState("")
+    const [stockPriceHighSilver, setStockPriceHighSilver] = useState("")
+    const [stockPriceLowSilver, setStockPriceLowSilver] = useState("")
 
     var stocks = new Stocks('5W6OH5NPU7Z3CETR')
 
-    async function request (stock) {
+    async function requestGold () {
         var result = await stocks.timeSeries({
-        symbol: stock,
+        symbol: 'GOLD',
         interval: 'daily',
         amount: 1,
         });
     
-        setStockPriceOpen(JSON.stringify(result[0].open))
-        setStockPriceHigh(JSON.stringify(result[0].high))
-        setStockPriceLow(JSON.stringify(result[0].low))
+        setStockPriceOpenGold(JSON.stringify(result[0].open))
+        setStockPriceHighGold(JSON.stringify(result[0].high))
+        setStockPriceLowGold(JSON.stringify(result[0].low))
+    }
+    
+    async function requestSteel () {
+        var result = await stocks.timeSeries({
+        symbol: 'X',
+        interval: 'daily',
+        amount: 1,
+        });
+    
+        setStockPriceOpenSteel(JSON.stringify(result[0].open))
+        setStockPriceHighSteel(JSON.stringify(result[0].high))
+        setStockPriceLowSteel(JSON.stringify(result[0].low))
+    }
+
+    async function requestSilver () {
+        var result = await stocks.timeSeries({
+        symbol: 'TSLA',
+        interval: 'daily',
+        amount: 1,
+        });
+    
+        setStockPriceOpenSilver(JSON.stringify(result[0].open))
+        setStockPriceHighSilver(JSON.stringify(result[0].high))
+        setStockPriceLowSilver(JSON.stringify(result[0].low))
     }
 
     useEffect(() => {
-        request('GOLD')
+        requestGold()
+        requestSteel()
+        requestSilver()
     }, [])
 
     return (
@@ -217,35 +249,35 @@ const Stocks = () => {
             <div className="stocks">
                 <div className="stock">
                     <p>United States Steel Corporation</p>
-                    <h1>X</h1>
+                    <h1>Gold</h1>
                     <h4>
-                        ⚪ Open <span className="open">{stockPriceOpen}</span>
+                        ⚪ Open <span className="open">{stockPriceOpenGold}</span>
                         <br/>
-                        🟢 High <span className="high">{stockPriceHigh}</span>
+                        🟢 High <span className="high">{stockPriceHighGold}</span>
                         <br/>
-                        🔴 Low <span className="low">{stockPriceLow}</span>
+                        🔴 Low <span className="low">{stockPriceLowGold}</span>
                     </h4>
                 </div>
                 <div className="stock">
                     <p>United States Steel Corporation</p>
-                    <h1>GOLD</h1>
+                    <h1>X</h1>
                     <h4>
-                        ⚪ Open <span className="open">{stockPriceOpen}</span>
+                        ⚪ Open <span className="open">{stockPriceOpenSteel}</span>
                         <br/>
-                        🟢 High <span className="high">{stockPriceHigh}</span>
+                        🟢 High <span className="high">{stockPriceHighSteel}</span>
                         <br/>
-                        🔴 Low <span className="low">{stockPriceLow}</span>
+                        🔴 Low <span className="low">{stockPriceLowSteel}</span>
                     </h4>
                 </div>
                 <div className="stock">
                     <p>United States Steel Corporation</p>
                     <h1>SILVER</h1>
                     <h4>
-                        ⚪ Open <span className="open">{stockPriceOpen}</span>
+                        ⚪ Open <span className="open">{stockPriceOpenSilver}</span>
                         <br/>
-                        🟢 High <span className="high">{stockPriceHigh}</span>
+                        🟢 High <span className="high">{stockPriceHighSilver}</span>
                         <br/>
-                        🔴 Low <span className="low">{stockPriceLow}</span>
+                        🔴 Low <span className="low">{stockPriceLowSilver}</span>
                     </h4>
                 </div>
             </div>
