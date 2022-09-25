@@ -204,7 +204,7 @@ const Stocks = () => {
 
     async function requestGold () {
         var result = await stocks.timeSeries({
-        symbol: 'GOLD',
+        symbol: 'STEEL',
         interval: 'daily',
         amount: 1,
         });
@@ -216,7 +216,7 @@ const Stocks = () => {
     
     async function requestSteel () {
         var result = await stocks.timeSeries({
-        symbol: 'X',
+        symbol: 'IRON ORE',
         interval: 'daily',
         amount: 1,
         });
@@ -228,7 +228,7 @@ const Stocks = () => {
 
     async function requestSilver () {
         var result = await stocks.timeSeries({
-        symbol: 'TSLA',
+        symbol: 'HRC',
         interval: 'daily',
         amount: 1,
         });
@@ -249,36 +249,15 @@ const Stocks = () => {
             <div className="stocks">
                 <div className="stock">
                     <p>United States Steel Corporation</p>
-                    <h1>Gold</h1>
-                    <h4>
-                        ⚪ Open <span className="open">{stockPriceOpenGold}</span>
-                        <br/>
-                        🟢 High <span className="high">{stockPriceHighGold}</span>
-                        <br/>
-                        🔴 Low <span className="low">{stockPriceLowGold}</span>
-                    </h4>
+                    <h1>Steel <span className="price">{stockPriceOpenGold}</span></h1>
                 </div>
                 <div className="stock">
                     <p>United States Steel Corporation</p>
-                    <h1>X</h1>
-                    <h4>
-                        ⚪ Open <span className="open">{stockPriceOpenSteel}</span>
-                        <br/>
-                        🟢 High <span className="high">{stockPriceHighSteel}</span>
-                        <br/>
-                        🔴 Low <span className="low">{stockPriceLowSteel}</span>
-                    </h4>
+                    <h1>Iron Ore <span className="price">{stockPriceOpenSteel}</span></h1>
                 </div>
                 <div className="stock">
                     <p>United States Steel Corporation</p>
-                    <h1>SILVER</h1>
-                    <h4>
-                        ⚪ Open <span className="open">{stockPriceOpenSilver}</span>
-                        <br/>
-                        🟢 High <span className="high">{stockPriceHighSilver}</span>
-                        <br/>
-                        🔴 Low <span className="low">{stockPriceLowSilver}</span>
-                    </h4>
+                    <h1>HRC <span className="price">{stockPriceOpenSilver}</span></h1>
                 </div>
             </div>
         </div>
