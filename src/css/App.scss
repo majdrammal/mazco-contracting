@@ -55,7 +55,7 @@ button {
     font-size: 18px;
     border: 1px solid $theme;
     background-color: rgba(255, 255, 255, 0.086);
-    color: $white;
+    color: $theme;
     font-weight: 700;
     cursor: pointer;
     transition: $fast;
@@ -147,7 +147,7 @@ nav {
     display: flex;
     // justify-content: center;
     align-items: center;
-    background-color: $white;
+    background-color: $theme;
     background-image: linear-gradient(rgba(54, 54, 54, 0.9),rgba(67, 67, 67, 0.9)), url("https://structuralbeam.com/wp-content/uploads/2021/08/background.jpeg");
     background-attachment: fixed;
     background-size: cover;
@@ -280,7 +280,7 @@ nav {
 
         h1 {
             margin-top: 20px;
-            color: black;
+            color: $themealt;
             font-weight: 700;
         }
 
@@ -290,7 +290,7 @@ nav {
         }
 
         h4 {
-            color: black
+            color: $themealt
         }
 
         span {
@@ -298,7 +298,7 @@ nav {
         }
 
         .open {
-            color: black;
+            color: $themealt;
         }
 
         .high {
@@ -324,22 +324,22 @@ nav {
         padding: 135px 20px 60px 20px;
 
         p {
-            border-top: 1px solid black;
+            border-top: 1px solid $themealt;
             padding-top: 40px;
             color: rgb(46, 46, 46);
         }
 
         h2 {
             font-size: 40px;
-            color: black;
+            color: $themealt;
             width: fit-content;
             padding-bottom: 5px;
-            // border-bottom: 0.5px solid $white;
+            // border-bottom: 0.5px solid $theme;
         }
 
         h3 {
             margin-top: 10px;
-            color: black;
+            color: $themealt;
             font-weight: 300;
             font-size: 16px;
         }
@@ -478,7 +478,7 @@ nav {
 
         h2 {
             font-size: 40px;
-            color: $white;
+            color: $theme;
             margin-bottom: 40px;
         }
         
@@ -548,7 +548,7 @@ nav {
                     &:hover {
                         transform: scale(1);
                         background-color: $themealt;
-                        color: $white;
+                        color: $theme;
                     }
                 }
 
@@ -606,7 +606,7 @@ nav {
             &:hover {
                 transform: scale(1);
                 background-color: $themealt;
-                color: $white;
+                color: $theme;
             }
         }
       }
@@ -648,7 +648,7 @@ nav {
         letter-spacing: 10px;
         font-weight: 800;
         margin-left: 10px;
-        // font-family: 'Bevan', cursive;
+        // font-family: 'Bevan', cursive; 
     }
 
     h6 {
@@ -660,7 +660,7 @@ nav {
 
     p {
         margin-top: 40px;
-        color: $white;
+        color: $theme;
         opacity: 0.6;
         font-size: 12px;
     }
