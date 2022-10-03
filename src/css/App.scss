@@ -86,6 +86,10 @@ nav {
         align-items: center;
         justify-content: space-between;
 
+        @media (max-width: 490px) {
+            justify-content: center;
+        }
+
         h1 {
             color: $red;
             font-size: 50px;
@@ -141,6 +145,7 @@ nav {
 /* HEADER */
 
 #header {
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     width: 100%;
     height: calc(85vh);
     position: relative;
@@ -186,6 +191,10 @@ nav {
                 font-size: 60px;
                 font-weight: 400;
                 letter-spacing: 5px;
+
+                @media (max-width: 540px) {
+                    font-size: 38px;
+                }
             }
         
             h2:nth-child(2n) {
@@ -242,74 +251,80 @@ nav {
             .right {
                 border: none;
                 padding: 0;
-                width: 50%;
+                width: 90%;
                 margin-top: 60px;
+            }
+
+            .left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
             }
         }
     }
 }
 
-/* STOCKS */
+// /* STOCKS */
 
-#stocks {
-    position: absolute;
-    bottom: -82.5px;
-    left: 50%;
-    transform: translate(-50%);
+// #stocks {
+//     position: absolute;
+//     bottom: -82.5px;
+//     left: 50%;
+//     transform: translate(-50%);
     
-    .stocks {
-        display: flex;
-    }
+//     .stocks {
+//         display: flex;
+//     }
 
-    .stock {
-        background-color: white;
-        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-        padding: 20px 20px;
-        width: 400px;
-        height: 115px;
-        margin-right: 40px;
+//     .stock {
+//         background-color: white;
+//         box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+//         padding: 20px 20px;
+//         width: 400px;
+//         height: 115px;
+//         margin-right: 40px;
 
-        &:last-child {
-            margin-right: 0;
-        }
+//         &:last-child {
+//             margin-right: 0;
+//         }
 
-        p {
-            color: $red;
-            font-weight: 700;
-        }
+//         p {
+//             color: $red;
+//             font-weight: 700;
+//         }
 
-        h1 {
-            margin-top: 20px;
-            color: $themealt;
-            font-weight: 700;
-        }
+//         h1 {
+//             margin-top: 20px;
+//             color: $themealt;
+//             font-weight: 700;
+//         }
 
-        .price {
-            color: gray;
-            font-size: 24px;
-        }
+//         .price {
+//             color: gray;
+//             font-size: 24px;
+//         }
 
-        h4 {
-            color: $themealt
-        }
+//         h4 {
+//             color: $themealt
+//         }
 
-        span {
-            margin-left: 10px;
-        }
+//         span {
+//             margin-left: 10px;
+//         }
 
-        .open {
-            color: $themealt;
-        }
+//         .open {
+//             color: $themealt;
+//         }
 
-        .high {
-            color: rgb(107, 169, 107);
-        }
+//         .high {
+//             color: rgb(107, 169, 107);
+//         }
 
-        .low {
-            color: rgb(222, 113, 113);
-        }
-    }
-}
+//         .low {
+//             color: rgb(222, 113, 113);
+//         }
+//     }
+// }
 
 
 /* ABOUT */
@@ -321,11 +336,9 @@ nav {
     .container {
         width: 60%;
         margin: 0 auto;
-        padding: 135px 20px 60px 20px;
+        padding: 60px 20px 60px 20px;
 
         p {
-            border-top: 1px solid $themealt;
-            padding-top: 40px;
             color: rgb(46, 46, 46);
         }
 
@@ -362,14 +375,29 @@ nav {
             width: fit-content;
             font-size: 40px;
             color: $themealt;
-            border-bottom: 0.1px solid $themealt;
-            padding-bottom: 10px;
+            padding-bottom: 30px;
+
+            @media (max-width: 500px) {
+                font-size: 30px;
+            } 
+
+            @media (max-width: 400px) {
+                font-size: 20px;
+            } 
         }
 
         h3 {
             align-self: flex-start;
             font-size: 40px;
             color: $lightgray;
+            
+            @media (max-width: 650px) {
+                align-self: center;
+            }
+
+            @media (max-width: 400px) {
+                font-size: 30px;
+            } 
         }
 
         .services__wrapper {
@@ -407,6 +435,15 @@ nav {
             margin: 40px 40px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
+            @media (max-width: 500px) {
+                min-width: 200px;
+                max-width: 200px;
+
+                img {
+                    height: 150px !important;
+                }
+            }
+
             img {
                 width: 100%;
                 height: 200px;
@@ -426,6 +463,12 @@ nav {
                 transform: scale(0);
                 color: $theme;
                 border-bottom: 0.5px solid $themealt;
+
+                @media (max-width: 500px) {
+                    height: 150px;
+                    font-size: 14px;
+                }
+
             }
 
             h3 {
@@ -510,6 +553,11 @@ nav {
                 padding: 30px 50px;
                 box-shadow: rgba(0, 0, 0, 0.178) 0px 4px 12px;
                 background-color: $theme;
+
+                @media (max-width: 540px) {
+                    justify-content: center;
+                    text-align: center;
+                }
             
                 &:not(:last-child) {
                     margin-bottom: 20px;
@@ -520,21 +568,37 @@ nav {
                     margin-right: 20px;
                     font-size: 35px;
                     margin-left: 10px;
+
+                    @media (max-width: 540px) {
+                        display: none;
+                    }
                 }
                 
                 .fa-whatsapp, .fa-envelope {
                     color: $themealt;
                     font-size: 45px;
                     margin-right: 20px;
+
+                    @media (max-width: 540px) {
+                        display: none;
+                    }
                 }
                 
                 .fa-envelope {
                     font-size: 40px;
                     margin-right: 20px;
+
+                    @media (max-width: 540px) {
+                        display: none;
+                    }
                 }
 
                 h3 {
                     color: $themealt;
+
+                    @media (max-width: 400px) {
+                        font-size: 16px;
+                    }
                 }
     
                 h2 {
@@ -542,6 +606,10 @@ nav {
                     margin: 5px 0 0 0;
                     font-size: 20px;
                     transition: all 300ms ease;
+
+                    @media (max-width: 400px) {
+                        font-size: 14px;
+                    }
 
                     &:hover {
                         transform: scale(0.95);
@@ -586,6 +654,11 @@ nav {
             font-size: 25px;
             margin: 20px 0;
             color: $themealt;
+
+            @media (max-width: 540px) {
+                font-size: 20px;
+                text-align: center;
+            }
         }
           
         input, textarea {
@@ -613,6 +686,10 @@ nav {
             border: 1px solid $themealt;
             color: $themealt;
             transition: $fast;
+
+            @media (max-width: 1000px) {
+                margin: 7.5px auto;
+            }
 
             &:hover {
                 transform: scale(1);
@@ -680,9 +757,12 @@ nav {
 
 
 
-@media (max-width: 600px) {
-
+@media (max-width: 880px) {
     h1 {
         font-size: 50px !important;
+    }
+
+    .nav__links {
+        display: none !important;
     }
 }

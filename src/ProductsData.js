@@ -47,13 +47,13 @@ const productsData =
         {
             id: 7,
             name: "Contracting",
-            description: "mazen is my brother he is businessman making company in saudia arabia, and i am making his website.",
+            description: "",
             image: "https://www.designingbuildings.co.uk/w/images/3/3b/Construction_management.jpg"
         },
         {
             id: 8,
             name: "Delivery",
-            description: "mazen is my brother he is businessman making company in saudia arabia, and i am making his website.",
+            description: "",
             image: "https://www.edconsteel.com.au/wp-content/uploads/2020/09/ES-Country-roads.jpg"
         }
     ]      

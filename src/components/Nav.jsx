@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import logo from '../assets/logo.png'
 
@@ -9,13 +10,12 @@ const Nav = () => {
                     <h1>Solid</h1>
                     <h6>Contracting</h6>
                 </div>
-                <ul>
+                <ul className="nav__links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
                     <a href="#services">Services</a>
                     <a href="#projects">Project</a>
                     <a href="#contact">Contact</a>
-                    <h4>XX X XX</h4>
                 </ul>
             </div>
         </nav>
