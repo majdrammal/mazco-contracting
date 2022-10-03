@@ -206,7 +206,7 @@ nav .container a:visited {
 }
 /* ABOUT */
 #about {
-  background-color: rgb(218, 216, 216);
+  background-color: rgb(26, 26, 26);
   width: 100%;
 }
 #about .container {
@@ -215,11 +215,11 @@ nav .container a:visited {
   padding: 60px 20px 60px 20px;
 }
 #about .container p {
-  color: rgb(46, 46, 46);
+  color: rgba(85, 85, 85, 0.723);
 }
 #about .container h2 {
   font-size: 40px;
-  color: black;
+  color: white;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
@@ -227,7 +227,7 @@ nav .container a:visited {
 }
 #about .container h3 {
   margin-top: 10px;
-  color: black;
+  color: white;
   font-weight: 300;
   font-size: 16px;
 }
@@ -583,8 +583,11 @@ nav .container a:visited {
 }
 
 @media (max-width: 880px) {
-  h1 {
-    font-size: 50px !important;
+  nav h1 {
+    font-size: 40px !important;
+  }
+  nav h6 {
+    font-size: 17px !important;
   }
   .nav__links {
     display: none !important;

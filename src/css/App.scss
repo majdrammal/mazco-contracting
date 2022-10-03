@@ -330,7 +330,7 @@ nav {
 /* ABOUT */
 
 #about {
-    background-color: rgb(218, 216, 216); //343433/442B17
+    background-color: rgb(26, 26, 26); //343433/442B17
     width: 100%;
 
     .container {
@@ -339,12 +339,12 @@ nav {
         padding: 60px 20px 60px 20px;
 
         p {
-            color: rgb(46, 46, 46);
+            color: $lightgray;
         }
 
         h2 {
             font-size: 40px;
-            color: $themealt;
+            color: $theme;
             width: fit-content;
             padding-bottom: 5px;
             // border-bottom: 0.5px solid $theme;
@@ -352,7 +352,7 @@ nav {
 
         h3 {
             margin-top: 10px;
-            color: $themealt;
+            color: $theme;
             font-weight: 300;
             font-size: 16px;
         }
@@ -736,7 +736,6 @@ nav {
         letter-spacing: 10px;
         font-weight: 800;
         margin-left: 10px;
-        // font-family: 'Bevan', cursive; 
     }
 
     h6 {
@@ -758,8 +757,12 @@ nav {
 
 
 @media (max-width: 880px) {
-    h1 {
-        font-size: 50px !important;
+    nav h1 {
+        font-size: 40px !important;
+    }
+
+    nav h6 {
+        font-size: 17px !important;
     }
 
     .nav__links {
