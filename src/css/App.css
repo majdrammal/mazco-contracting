@@ -361,6 +361,15 @@ nav .container a:visited {
   background-color: black;
   color: white;
 }
+#services .container .service__para {
+  text-transform: capitalize;
+  overflow-y: auto;
+  -ms-overflow-style: none; /* Internet Explorer */
+  scrollbar-width: none; /* Firefox */
+}
+#services .container .service__para::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
 #services .container .service__para--on p {
   transform: scale(1);
 }

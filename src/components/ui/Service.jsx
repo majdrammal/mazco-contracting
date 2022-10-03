@@ -15,9 +15,7 @@ const Service = ({ prod }) => {
             desc = false
         }
     }
-
-    console.log(prod)
-
+    
     return (
         <div className={`service service__${prod?.id}`}>
             <img src={prod?.image} alt="" />

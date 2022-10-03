@@ -451,6 +451,17 @@ nav {
             }
         }
 
+        .service__para {
+            text-transform: capitalize;
+            overflow-y: auto;
+            -ms-overflow-style: none;  /* Internet Explorer */
+            scrollbar-width: none;  /* Firefox */
+
+            &::-webkit-scrollbar {
+                display: none; /* Safari and Chrome */
+            }
+        }
+
         .service__para--on {
             
             p {
