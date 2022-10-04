@@ -330,7 +330,7 @@ nav {
 /* ABOUT */
 
 #about {
-    background-color: #47494A; //343433/442B17
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/gQuE1d8.jpg"); //343433/442B17
     width: 100%;
 
     .container {
@@ -339,7 +339,7 @@ nav {
         padding: 60px 20px 60px 20px;
 
         p {
-            color: rgb(144, 144, 144);
+            color: rgba(255, 255, 255, 0.507);
         }
 
         h2 {

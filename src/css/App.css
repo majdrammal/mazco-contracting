@@ -206,7 +206,7 @@ nav .container a:visited {
 }
 /* ABOUT */
 #about {
-  background-color: #47494A;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url("https://wallpapercave.com/wp/gQuE1d8.jpg");
   width: 100%;
 }
 #about .container {
@@ -215,7 +215,7 @@ nav .container a:visited {
   padding: 60px 20px 60px 20px;
 }
 #about .container p {
-  color: rgb(144, 144, 144);
+  color: rgba(255, 255, 255, 0.507);
 }
 #about .container h2 {
   font-size: 40px;

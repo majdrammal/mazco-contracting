@@ -7,9 +7,9 @@ const About = () => {
             <div className="container">
                 <p>Est. 2022</p>
                 <h2>About Us</h2>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, mollitia quidem. Suscipit expedita quaerat voluptates, illum nam itaque rerum iste?</h3>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolore tempore, cum ratione consectetur neque molestiae illo ut voluptas eveniet voluptatum magni officia ipsa hic enim libero. Quibusdam accusamus debitis repellat saepe adipisci totam repudiandae alias in tenetur. Aliquid, quam.</h3>
-                <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, mollitia quidem. Suscipit expedita quaerat voluptates, illum nam itaque rerum iste?</h3>
+                <h3>With an extensive experience and a long and proven track record in the gulf market, <span style={{color: "rgb(172, 41, 41)", fontWeight: "bold"}}>Solid Contracting</span> has gradually grown to partner with it's clients by providing them with a wide a range of construction material and delivering them to their sites.</h3>
+                <h3>Since the company's establishment, we have strived to provide our customers with quality products and services that take into consideration their need for value, punctuality and reliability.</h3>
+                <h3>Throughout the years, we have been building partnerships rather than dealing with clients, and remain confident that whatever your business' needs are, we have the right and complete business solution for you.</h3>
             </div>
         </div>
     );

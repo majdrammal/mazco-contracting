@@ -29,7 +29,7 @@ const Header = () => {
                 <div className="right">
                     <h3>We Specialize In</h3>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam a perspiciatis nemo necessitatibus aspernatur odio sint nulla. Obcaecati temporibus dolorum labore eum ut. Minus esse perspiciatis temporibus eaque, laudantium tenetur!
+                        trading and manufacturing steel, as well as supplying specialized services in contracting and the delivery of steel products to contstruction sites.
                     </p>
                     <a href="#about">Learn More</a>
                 </div>
