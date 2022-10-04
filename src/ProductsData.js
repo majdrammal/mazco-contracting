@@ -2,7 +2,7 @@ const productsData =
 [   [
         {
             id: 0,
-            name: "Square Tube",
+            name: "Square Tubes",
             description: "Square tubes are structural steel products that can be used to form a network of building columns. These tubes can also be used for fencing structures, entry gates, railings and as decorative dividers.",
             image: "https://www.asiamzsteel.com/uploads/0022.jpg"
         },
@@ -14,7 +14,7 @@ const productsData =
         },
         {
             id: 2,
-            name: "Rectangular Tube",
+            name: "Rectangular Tubes",
             description: "Steel rectangular tubing is a strong, resilient, tough and durable construction material option that can be used for a nearly endless amount of applications, such as for maintenance and structural purposes.",
             image: "https://i.ebayimg.com/images/g/nVsAAOSwlhpZgjdn/s-l400.jpg"
         },
@@ -26,7 +26,7 @@ const productsData =
         },
         {
             id: 4,
-            name: "Universal Column",
+            name: "Universal Columns",
             description: "Universal columns are extremely effective for use as structural steel. They provide the maximum amount of strength for the volume of steel used, making them the most efficient method of carrying bending and shear loads.",
             image: "https://www.steel4extensions.co.uk/wp-content/uploads/2019/04/product-image-gallery-universal-column.jpg"
         },
