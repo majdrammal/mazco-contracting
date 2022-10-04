@@ -37,7 +37,7 @@ const Contact = () => {
                         </div>
                     </div>
                     <form>
-                        <h3>Send us an inquiry!</h3>
+                        <h3>Get A Quotation!</h3>
                         <input type="text" placeholder="Full Name" />
                         <input type="email" placeholder="Email" />
                         <input type="phone" placeholder="Phone" />

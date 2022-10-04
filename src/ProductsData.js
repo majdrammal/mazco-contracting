@@ -41,19 +41,19 @@ const productsData =
         {
             id: 6,
             name: "Manufacturing",
-            description: "Manufacturing is the process of turning raw materials or parts into finished goods through the use of tools, human labor, machinery, and chemical processing.",
+            description: "We are constantly updating our machinery to provide you the best value-added services. Our diverse range of processing capabilities allows us to deliver customized solutions for any order.",
             image: "http://media.hanoitimes.vn/2022/04/19/4315_nganh_thep_2021.jpeg"
         },
         {
             id: 7,
             name: "Contracting",
-            description: "",
+            description: "We work with you every step of the way starting with what is still an idea. Our capabilities to design are limitless, and our Engineering team will make sure your vision comes true.",
             image: "https://www.designingbuildings.co.uk/w/images/3/3b/Construction_management.jpg"
         },
         {
             id: 8,
             name: "Delivery",
-            description: "",
+            description: "We have our own fleet of delivery vehicles that allow us to minimize costs and the time between your job site and our facility. Our drivers are experienced professionals who follow the law and on-site regulations.",
             image: "https://www.edconsteel.com.au/wp-content/uploads/2020/09/ES-Country-roads.jpg"
         }
     ]      
