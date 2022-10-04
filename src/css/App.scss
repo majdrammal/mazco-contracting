@@ -147,7 +147,7 @@ nav {
 #header {
     box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
     width: 100%;
-    height: calc(85vh);
+    height: calc(100vh);
     position: relative;
     display: flex;
     // justify-content: center;
@@ -330,7 +330,7 @@ nav {
 /* ABOUT */
 
 #about {
-    background-color: rgb(26, 26, 26); //343433/442B17
+    background-color: #47494A; //343433/442B17
     width: 100%;
 
     .container {
@@ -339,7 +339,7 @@ nav {
         padding: 60px 20px 60px 20px;
 
         p {
-            color: $lightgray;
+            color: rgb(144, 144, 144);
         }
 
         h2 {
