@@ -318,7 +318,7 @@ nav .container a:visited {
   height: 200px;
 }
 #services .container .service p {
-  background-color: black;
+  background: rgb(51, 51, 51);
   position: absolute;
   top: 0;
   left: 0;
