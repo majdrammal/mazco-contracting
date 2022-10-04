@@ -17,7 +17,7 @@ const Services = () => {
                         })
                     }
                 </div>
-                <h3 style={{marginTop: "40px"}}>Services</h3>
+                <h3 id="services_services" style={{marginTop: "40px"}}>Services</h3>
                 <div className="services__wrapper">
                     {
                         productsData[1].map(product => {

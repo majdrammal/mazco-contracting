@@ -13,8 +13,8 @@ const Nav = () => {
                 <ul className="nav__links">
                     <a href="#home">Home</a>
                     <a href="#about">About</a>
-                    <a href="#services">Services</a>
-                    <a href="#projects">Project</a>
+                    <a href="#services">Products</a>
+                    <a href="#services_services">Services</a>
                     <a href="#contact">Contact</a>
                 </ul>
             </div>
