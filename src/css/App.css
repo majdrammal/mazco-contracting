@@ -100,7 +100,7 @@ nav .nav__title--bottom {
 
 nav hr {
   width: 80px;
-  height: 0.5px;
+  height: 1px;
   background-color: rgb(68, 68, 68);
   border: none;
   margin: 0 10px 0 0;
@@ -606,7 +606,7 @@ nav .container a:visited {
 
 #footer hr {
   width: 80px;
-  height: 0.5px;
+  height: 1px;
   background-color: rgb(68, 68, 68);
   border: none;
   margin: 0 10px 0 5px;
