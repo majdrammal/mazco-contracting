@@ -79,7 +79,7 @@ nav .container {
 }
 nav .container h1 {
   color: rgb(144, 33, 33);
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 10px;
   font-weight: 800;
 }
@@ -87,7 +87,8 @@ nav .container h6 {
   color: rgba(255, 255, 255, 0.507);
   font-size: 21px;
   line-height: 0px;
-  letter-spacing: 3.5px;
+  margin-top: 2px;
+  letter-spacing: 21px;
 }
 nav .container h4 {
   font-size: 35px;
@@ -564,7 +565,7 @@ nav .container a:visited {
 }
 #footer h1 {
   color: rgb(144, 33, 33);
-  font-size: 50px;
+  font-size: 40px;
   letter-spacing: 10px;
   font-weight: 800;
   margin-left: 10px;
@@ -573,7 +574,9 @@ nav .container a:visited {
   color: rgba(255, 255, 255, 0.507);
   font-size: 21px;
   line-height: 0px;
-  letter-spacing: 3.25px;
+  margin-left: 20px;
+  margin-top: 2px;
+  letter-spacing: 21px;
 }
 #footer p {
   margin-top: 40px;
@@ -587,7 +590,7 @@ nav .container a:visited {
     font-size: 40px !important;
   }
   nav h6 {
-    font-size: 17px !important;
+    font-size: 21px !important;
   }
   .nav__links {
     display: none !important;
