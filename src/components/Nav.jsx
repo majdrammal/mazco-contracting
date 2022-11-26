@@ -9,7 +9,11 @@ const Nav = () => {
                 <div className="nav__title">
                     <h1>Solid</h1>
                     <div className="nav__title--bottom">
-                        <hr />
+                        <hr style={{width: "5px"}}/>
+                        <hr style={{width: "7.5px"}}/>
+                        <hr style={{width: "12.5px"}}/>
+                        <hr style={{width: "20px"}}/>
+                        <hr style={{width: "25px"}}/>
                         <h6>Trade</h6>
                     </div>
                 </div>

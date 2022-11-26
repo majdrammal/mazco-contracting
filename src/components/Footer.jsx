@@ -7,7 +7,11 @@ const Footer = () => {
             <div className="footer__logo">
                 <h1>Solid</h1>
                 <div className="footer__logo--bottom">
-                    <hr/>
+                    <hr style={{width: "5px"}}/>
+                    <hr style={{width: "7.5px"}}/>
+                    <hr style={{width: "12.5px"}}/>
+                    <hr style={{width: "20px"}}/>
+                    <hr style={{width: "25px"}}/>
                     <h6>Trade</h6>
                 </div>
             </div>

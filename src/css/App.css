@@ -99,14 +99,15 @@ nav .nav__title--bottom {
 }
 
 nav hr {
-  width: 80px;
   height: 1px;
   background-color: rgb(68, 68, 68);
   border: none;
-  margin: 0 10px 0 0;
+  margin: 0 3px 0 0;
 }
 
 nav .container h6 {
+  margin-left: 3px;
+  margin-right: 7px;
   color: rgba(255, 255, 255, 0.507);
   font-size: 12px;
   letter-spacing: 5px;
@@ -605,17 +606,17 @@ nav .container a:visited {
 }
 
 #footer hr {
-  width: 80px;
   height: 1px;
   background-color: rgb(68, 68, 68);
   border: none;
-  margin: 0 10px 0 5px;
+  margin: 0 0 0 3px;
 }
 
 #footer h6 {
   color: rgba(255, 255, 255, 0.507);
   font-size: 12px;
   letter-spacing: 5px;
+  margin-left: 10px;
 }
 
 #footer p {
