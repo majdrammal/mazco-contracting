@@ -22,7 +22,7 @@ const Contact = () => {
                             <div className="contact__text">
                                 <h3>Email Us At</h3>
                                 <a href="mailto:mazenramal@gmail.com" target="_blank">
-                                    <h2>info@solidtrade.com</h2>
+                                    <h2>info@solidtrade.me</h2>
                                 </a>
                             </div>
                         </div>

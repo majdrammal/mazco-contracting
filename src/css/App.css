@@ -77,6 +77,13 @@ nav .container {
     justify-content: center;
   }
 }
+
+nav .container .nav__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 nav .container h1 {
   color: rgb(144, 33, 33);
   font-size: 40px;
@@ -85,10 +92,10 @@ nav .container h1 {
 }
 nav .container h6 {
   color: rgba(255, 255, 255, 0.507);
-  font-size: 21px;
+  font-size: 14px;
   line-height: 0px;
   margin-top: 2px;
-  letter-spacing: 21px;
+  letter-spacing: 15px;
 }
 nav .container h4 {
   font-size: 35px;
@@ -563,6 +570,13 @@ nav .container a:visited {
   background-color: black;
   padding: 20px 10px;
 }
+
+.footer__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 #footer h1 {
   color: rgb(144, 33, 33);
   font-size: 40px;
@@ -570,13 +584,14 @@ nav .container a:visited {
   font-weight: 800;
   margin-left: 10px;
 }
+
 #footer h6 {
   color: rgba(255, 255, 255, 0.507);
-  font-size: 21px;
+  font-size: 14px;
   line-height: 0px;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 2px;
-  letter-spacing: 21px;
+  letter-spacing: 10px;
 }
 #footer p {
   margin-top: 40px;
@@ -586,12 +601,6 @@ nav .container a:visited {
 }
 
 @media (max-width: 880px) {
-  nav h1 {
-    font-size: 40px !important;
-  }
-  nav h6 {
-    font-size: 21px !important;
-  }
   .nav__links {
     display: none !important;
   }

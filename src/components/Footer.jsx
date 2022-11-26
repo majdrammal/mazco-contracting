@@ -4,9 +4,11 @@ import logo from '../assets/logo.png'
 const Footer = () => {
     return (
         <div id="footer">
-            <h1>Solid</h1>
-            <h6>Trade</h6>
-            <p>Copyright &copy; 2022 | Solid Contracting</p>
+            <div className="footer__logo">
+                <h1>Solid</h1>
+                <h6>Trade</h6>
+            </div>
+            <p>Copyright &copy; 2022 | Solid Trade</p>
         </div>
     );
 }
