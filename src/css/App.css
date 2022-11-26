@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -88,7 +89,8 @@ nav .container h1 {
   color: rgb(144, 33, 33);
   font-size: 40px;
   letter-spacing: 10px;
-  font-weight: 800;
+  /* font-weight: 800; */
+  font-family: 'Allerta Stencil', sans-serif;
 }
 
 nav .nav__title--bottom {
@@ -98,8 +100,8 @@ nav .nav__title--bottom {
 
 nav hr {
   width: 80px;
-  height: 5px;
-  background-color: rgb(144, 33, 33);
+  height: 0.5px;
+  background-color: rgb(68, 68, 68);
   border: none;
   margin: 0 10px 0 0;
 }
@@ -593,7 +595,7 @@ nav .container a:visited {
   color: rgb(144, 33, 33);
   font-size: 40px;
   letter-spacing: 10px;
-  font-weight: 800;
+  font-family: 'Allerta Stencil', sans-serif;
   margin-left: 10px;
 }
 
@@ -604,8 +606,8 @@ nav .container a:visited {
 
 #footer hr {
   width: 80px;
-  height: 5px;
-  background-color: rgb(144, 33, 33);
+  height: 0.5px;
+  background-color: rgb(68, 68, 68);
   border: none;
   margin: 0 10px 0 5px;
 }
