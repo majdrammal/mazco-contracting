@@ -6,7 +6,10 @@ const Footer = () => {
         <div id="footer">
             <div className="footer__logo">
                 <h1>Solid</h1>
-                <h6>Trade</h6>
+                <div className="footer__logo--bottom">
+                    <hr/>
+                    <h6>Trade</h6>
+                </div>
             </div>
             <p>Copyright &copy; 2022 | Solid Trade</p>
         </div>

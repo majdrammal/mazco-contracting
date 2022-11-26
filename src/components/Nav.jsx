@@ -8,7 +8,10 @@ const Nav = () => {
             <div className="container">
                 <div className="nav__title">
                     <h1>Solid</h1>
-                    <h6>Trade</h6>
+                    <div className="nav__title--bottom">
+                        <hr />
+                        <h6>Trade</h6>
+                    </div>
                 </div>
                 <ul className="nav__links">
                     <a href="#home">Home</a>

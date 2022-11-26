@@ -13,7 +13,8 @@ const Contact = () => {
                             <div className="contact__text">
                                 <h3>Call Us Directly At</h3>
                                 <a href="tel:+96171737772" target="_blank">
-                                    <h2>+966XXXXXXXX</h2>
+                                    <h2>+971507728375</h2>
+                                    <h2>+966536279307</h2>
                                 </a>
                             </div>
                         </div>
