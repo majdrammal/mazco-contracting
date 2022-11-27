@@ -12,8 +12,10 @@ const Contact = () => {
                             <FontAwesomeIcon icon="fa-solid fa-phone" />
                             <div className="contact__text">
                                 <h3>Call Us Directly At</h3>
-                                <a href="tel:+96171737772" target="_blank">
+                                <a href="tel:+971507728375" target="_blank">
                                     <h2>+971507728375</h2>
+                                </a>
+                                <a href="tel:+966536279307" target="_blank">
                                     <h2>+966536279307</h2>
                                 </a>
                             </div>
@@ -22,8 +24,8 @@ const Contact = () => {
                             <FontAwesomeIcon icon="fa-solid fa-envelope" />
                             <div className="contact__text">
                                 <h3>Email Us At</h3>
-                                <a href="mailto:mazenramal@gmail.com" target="_blank">
-                                    <h2>info@solidtrade.me</h2>
+                                <a href="mailto:solid@solidtrade.me" target="_blank">
+                                    <h2>solid@solidtrade.me</h2>
                                 </a>
                             </div>
                         </div>
@@ -31,7 +33,7 @@ const Contact = () => {
                             <FontAwesomeIcon icon="fa-brands fa-whatsapp" />
                             <div className="contact__text">
                                 <h3>Chat with Our Team</h3>
-                                <a href="https://api.whatsapp.com/send/?phone=971585707275&text&type=phone_number&app_absent=0" target="_blank">
+                                <a href="https://api.whatsapp.com/send/?phone=966536279307&text&type=phone_number&app_absent=0" target="_blank">
                                     <button>Whatsapp</button>
                                 </a>
                             </div>
