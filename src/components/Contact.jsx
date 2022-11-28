@@ -24,8 +24,8 @@ const Contact = () => {
                             <FontAwesomeIcon icon="fa-solid fa-envelope" />
                             <div className="contact__text">
                                 <h3>Email Us At</h3>
-                                <a href="mailto:solid@solidtrade.me" target="_blank">
-                                    <h2>solid@solidtrade.me</h2>
+                                <a href="mailto:trade@solidtrade.me" target="_blank">
+                                    <h2>trade@solidtrade.me</h2>
                                 </a>
                             </div>
                         </div>
