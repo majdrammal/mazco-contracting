@@ -7,7 +7,7 @@ const Nav = () => {
         <nav>
             <div className="container">
                 <div className="nav__title">
-                    <h1>Solid</h1>
+                    {/* <h1>Solid</h1>
                     <div className="nav__title--bottom">
                         <hr style={{width: "5px"}}/>
                         <hr style={{width: "7.5px"}}/>
@@ -15,7 +15,8 @@ const Nav = () => {
                         <hr style={{width: "20px"}}/>
                         <hr style={{width: "25px"}}/>
                         <h6>Trade</h6>
-                    </div>
+                    </div> */}
+                    <img width="180px" height="60px" className="logo" src={logo} alt="" />
                 </div>
                 <ul className="nav__links">
                     <a href="#home">Home</a>
