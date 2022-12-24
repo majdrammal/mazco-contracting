@@ -407,6 +407,31 @@ nav .container a:visited {
   background-size: cover;
   background-position: center;
 }
+
+#contact .contact__success {
+  color: green;
+  margin-top: 10px; 
+  display: none;
+}
+
+#contact .fa-spinner {
+  animation: spin 1000ms linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#contact input, #contact textarea {
+  text-transform: none;
+}
+
 #contact .container {
   width: 80%;
   margin: 0 auto;
@@ -578,6 +603,10 @@ nav .container a:visited {
   }
   #contact form {
     width: 100%;
+  }
+
+  #contact .contact__success {
+    text-align: center;
   }
 }
 

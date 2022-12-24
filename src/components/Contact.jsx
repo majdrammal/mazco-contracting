@@ -1,7 +1,32 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
+import emailjs from 'emailjs-com';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Contact = () => {
+
+    const [loading, setLoading] = useState(false)
+
+    const form = useRef()
+    const contact = (e) => {
+        e.preventDefault() 
+        setLoading(true)
+        emailjs 
+            .sendForm(
+                'service_m1vgo5n',
+                'template_og8pegb',
+                form.current,
+                'DeltiihXjEe1s6iW1'
+            ).then(() => {
+                document.querySelector("#contact__form").reset()
+                setLoading(false) 
+                document.querySelector('.contact__success').style.display = "block"
+            }).catch(() => { 
+                alert(
+                    "The E-mail service is temporarily unavailable. Please contact us directly on trade@solidtrade.me"
+                )
+            })
+    }
+
     return (
         <div id="contact">
             <div className="container">
@@ -39,13 +64,20 @@ const Contact = () => {
                             </div>
                         </div>
                     </div>
-                    <form>
+                    <form ref={form} id="contact__form" onSubmit={contact}>
                         <h3>Get A Quotation!</h3>
-                        <input type="text" placeholder="Full Name" />
-                        <input type="email" placeholder="Email" />
+                        <input type="text" required name="user_name" placeholder="Full Name" />
+                        <input type="email" required name="user_email" placeholder="Email" />
                         <input type="phone" placeholder="Phone" />
-                        <textarea type="message" placeholder="Message"></textarea>
-                        <button>Submit</button>
+                        <textarea type="message" required name="message" placeholder="Message"></textarea>
+                        {
+                            !loading ? (
+                                <button>Send</button>
+                                ) : (
+                                <button><FontAwesomeIcon icon="fa-solid fa-spinner" /></button>
+                            )
+                        }
+                        <p className="contact__success"><b>Success! We will get back to you soon.</b></p>
                     </form>
                 </div>
             </div>

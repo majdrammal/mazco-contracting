@@ -16,7 +16,7 @@ const Nav = () => {
                         <hr style={{width: "25px"}}/>
                         <h6>Trade</h6>
                     </div> */}
-                    <img width="180px" height="60px" className="logo" src={logo} alt="" />
+                    <img width="180px" height="50px" className="logo" src={logo} alt="" />
                 </div>
                 <ul className="nav__links">
                     <a href="#home">Home</a>
