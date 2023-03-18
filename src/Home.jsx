@@ -9,17 +9,19 @@ const Home = () => {
         <div id="home">
             <nav>
                 <div className="nav__container">
-                    <div className="nav__links">
+                    <img src={logo} alt="" className="nav__logo" />
+                    {/* <div className="nav__links">
                         <a href="#home" className="nav__link">Home</a>
                         <a href="#about" className="nav__link">Sections</a>
                         <a href="#about" className="nav__link">About</a>
-                    </div>
-                    <img src={logo} alt="" className="nav__logo" />
+                    </div> */}
                     {/* <a href="/" className="nav__logo">Solid Trade</a> */}
                     <div className="nav__links">
                         <a href="#home" className="nav__link">Home</a>
-                        <a href="#about" className="nav__link">Sections</a>
                         <a href="#about" className="nav__link">About</a>
+                        <a href="#sections" className="nav__link">Sections</a>
+                        <a href="#projects" className="nav__link">Projects</a>
+                        <a href="#contact" className="nav__link">Contact</a>
                     </div>
                 </div>
             </nav>
@@ -28,8 +30,12 @@ const Home = () => {
                     <img src={globe} className="header__img" alt="" />
                     {/* <img src={logo} alt="" className="header__logo" /> */}
                     <div className="header__text">
-                        <p className="header__loc green">Dubai</p>
-                        <h1 className="header__title">A healthy trade<br/>Is a <span className="green">Solid Trade</span></h1>
+                        {/* <p className="header__loc green">""</p> */}
+                        <h1 className="header__title">
+                            <FontAwesomeIcon icon="fa-quote-left" />
+                            A healthy trade<br/>Is a <span className="green">Solid Trade</span>
+                            <FontAwesomeIcon icon="fa-quote-right" />
+                        </h1>
                         <p className="header__sub-title">Dedicated to investing in projects that promote the development of healthy green communities.</p>
                         <button className="btn-1">About Us</button>
                     </div>
@@ -56,9 +62,9 @@ At our core, we believe that by working together, we can create a better, health
                         <div className="sections__card">
                             <img src="https://www.neom.com/content/dam/neom/oxagon/c49/oxagon-main-hero-thumbnail.jpg" alt="" className="sections__card--img" />
                             <div className="sections__card--text">
-                                <h3 className="sections__card--title">Construction</h3>
+                                <h3 className="sections__card--title">Real Estate & Construction</h3>
                                 <p className="sections__card--sub-title green">Neom KSA</p>
-                                <p className="sections__card--para">construction of green cities supplying construction material and implementing green systems within smart cities etc</p>
+                                <p className="sections__card--para">We supply construction companies with sustainable construction materials, as well as other eco-friendly services to help develop green cities by implementing green systems within smart cities.</p>
                             </div>
                         </div>
                         <div className="sections__card">
@@ -66,7 +72,7 @@ At our core, we believe that by working together, we can create a better, health
                             <div className="sections__card--text">
                                 <h3 className="sections__card--title">F&B</h3>
                                 <p className="sections__card--sub-title green">The Barn</p>
-                                <p className="sections__card--para">construction of green cities supplying construction material and implementing green systems within smart cities etc</p>
+                                <p className="sections__card--para">With the intention to make healthy eating easier and more accessible, we became co-founders of a healthy restaurant chain, which we intend to develop in more than 60 countries by the end of 2025.</p>
                             </div>
                         </div>
                         <div className="sections__card">
@@ -74,7 +80,7 @@ At our core, we believe that by working together, we can create a better, health
                             <div className="sections__card--text">
                                 <h3 className="sections__card--title">Logistics</h3>
                                 <p className="sections__card--sub-title green">Trux Logistics</p>
-                                <p className="sections__card--para">construction of green cities supplying construction material and implementing green systems within smart cities etc</p>
+                                <p className="sections__card--para">To minimize the environmental impact of logistics, we are shifting our fleet into eco-friendly transport options</p>
                             </div>
                         </div>
                         <div className="sections__card">
@@ -82,7 +88,7 @@ At our core, we believe that by working together, we can create a better, health
                             <div className="sections__card--text">
                                 <h3 className="sections__card--title">Technology</h3>
                                 <p className="sections__card--sub-title green">Watchroom</p>
-                                <p className="sections__card--para">construction of green cities supplying construction material and implementing green systems within smart cities etc</p>
+                                <p className="sections__card--para">In an effort to bring people closer together, we are involving ourselves in technological ventures that aim to bridge gaps and enhance connectivity, as well as comfortable living with technologies that improve home automation and energy efficiency.</p>
                             </div>
                         </div>
                     </div>

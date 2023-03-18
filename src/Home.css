@@ -25,6 +25,13 @@ button {
     padding: 20px 60px;
     color: #8DC73F;
     border: 1px solid #8DC73F;
+    transition: all 300ms ease;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #8DC73F;
+    color: white;
 }
 
 /* NAV */
@@ -52,6 +59,12 @@ nav {
     /* text-transform: uppercase; */
     /* font-weight: 800; */
     /* color: black; */
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.nav__logo:hover {
+    transform: scale(0.97);
 }
 
 .nav__link {
@@ -60,6 +73,12 @@ nav {
     margin: 0 15px;
     text-transform: uppercase;
     font-size: 14px;
+    opacity: 0.5;
+    transition: all 300ms ease;
+}
+
+.nav__link:hover {
+    opacity: 1;
 }
 
 /* HEADER */
@@ -98,11 +117,28 @@ nav {
 }
 
 .header__title {
+    position: relative;
     color: black;
     font-size: 50px;
     margin: 20px 0 5px 0;
     font-weight: 700;
     text-transform: capitalize;
+    width: fit-content;
+}
+
+.fa-quote-left {
+    position: absolute;
+    top: -20px;
+    left: -30px;
+    color:#8DC73F;
+    font-size: 30px;
+}
+
+.fa-quote-right {
+    position: absolute;
+    bottom: -10px;
+    right: -35px;
+    font-size: 30px;
 }
 
 .header__sub-title {
@@ -197,7 +233,7 @@ nav {
     align-items: center;
 }
 
-.sections__card:nth-child(2n) {
+.sections__card:nth-child(even) {
     flex-direction: row-reverse;
 }
 
@@ -209,11 +245,11 @@ nav {
     border-radius: 50%;
 }
 
-.sections__card--img:nth-child(2n+1) {
+.sections__card:nth-child(odd) .sections__card--img {
     margin-right: 50px;
 }
 
-.sections__card--img:nth-child(2n) {
+.sections__card:nth-child(even) .sections__card--img {
     margin-left: 50px;
 }
 
@@ -250,6 +286,10 @@ nav {
         align-items: center;
     }
 
+    .header__title {
+        margin: 20px auto 0 auto;
+    }
+
     .header__text {
         text-align: center;
     }
@@ -279,11 +319,11 @@ nav {
         margin-bottom: 10px;
     }
 
-    .sections__card--img:nth-child(2n+1) {
+    .sections__card:nth-child(odd) .sections__card--img {
         margin-right: 0;
     }
 
-    .sections__card--img:nth-child(2n) {
+    .sections__card:nth-child(even) .sections__card--img {
         margin-left: 0;
     }
 }
