@@ -4,6 +4,14 @@ import logo from './assets/logo.png';
 import globe from './assets/globe.png';
 import watchroom from './assets/watchroom.PNG'
 
+/* partners */
+import emaar from './assets/emaar.png';
+import meraas from './assets/meraas.jpeg';
+import kamoa from './assets/kamoa.jpeg';
+import clab from './assets/clab.jpeg';
+import odoo from './assets/odoo.jpeg';
+import safco from './assets/safco.jpeg';
+
 const Home = () => {
     return (
         <div id="home">
@@ -20,7 +28,7 @@ const Home = () => {
                         <a href="#home" className="nav__link">Home</a>
                         <a href="#about" className="nav__link">About</a>
                         <a href="#sections" className="nav__link">Sections</a>
-                        <a href="#projects" className="nav__link">Projects</a>
+                        <a href="#partners" className="nav__link">Partners</a>
                         <a href="#contact" className="nav__link">Contact</a>
                     </div>
                 </div>
@@ -41,7 +49,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className="about">
+            <div id="about" className="about">
                 <div className="about__container">
                     <h1 className="about__title">About <span className="green">Us</span></h1>
                     <p className="about__text">Solid Trade is dedicated to investing in projects that promote the development of healthy green communities. 
@@ -55,7 +63,7 @@ At our core, we believe that by working together, we can create a better, health
                 <FontAwesomeIcon className="separator__icon" icon="fa-leaf" />
                 <hr className="separator__right" />
             </div>
-            <div className="sections">
+            <div id="sections" className="sections">
                 <div className="sections__container">
                     <h1 className="sections__title"><span className="green">What</span> We Do</h1>
                     <div className="sections__cards">
@@ -98,6 +106,31 @@ At our core, we believe that by working together, we can create a better, health
                     </div>
                 </div>
             </div>
+            <div className="separator">
+                <hr className="separator__left" />
+                <FontAwesomeIcon className="separator__icon" icon="fa-leaf" />
+                <hr className="separator__right" />
+            </div>
+            <div id="partners" className="partners">
+                <div className="partners__container">
+                    <h1 className="partners__title">Our Partners</h1>
+                    <hr className="partners__line" />
+                    <div className="partners__list">
+                        <img src={emaar} alt="" className="partner__img" />
+                        <img src={meraas} alt="" className="partner__img" />
+                        <img src={kamoa} alt="" className="partner__img" />
+                        <img src={clab} alt="" className="partner__img" />
+                        <img src={odoo} alt="" className="partner__img" />
+                        <img src={safco} alt="" className="partner__img" />
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <div className="footer__container">
+                    <img src={logo} alt="" className="footer__logo" />
+                    <p className="footer__cr">Copyright &copy; 2023 | Solid Trade </p>
+                </div>
+            </footer>
         </div>
     );
 }
