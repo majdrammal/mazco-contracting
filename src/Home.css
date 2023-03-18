@@ -20,6 +20,7 @@
 }
 
 button {
+    background-color: transparent;
     outline: none;
     border: none;
     padding: 20px 60px;
@@ -88,7 +89,7 @@ nav {
     background: linear-gradient(rgba(240, 240, 240, 0.95), rgba(240, 240, 240, 0.95)), url("https://wallpapercave.com/wp/wp2003573.jpg");
     background-size: cover;
     background-attachment: fixed;
-    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
 }
 
 .header__container {
@@ -159,8 +160,9 @@ nav {
 
 .about {
     width: 100%;
-    background-color: #8DC73F;
+    /* background-color: #8DC73F; */
     padding: 50px;
+    /* box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px; */
 }
 
 .about__container {
@@ -170,28 +172,17 @@ nav {
 
 .about__title {
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .about__text {
     margin-top: 15px;
     font-size: 17px;
-    color: rgba(255, 255, 255, 0.634);
+    color: rgba(0, 0, 0, 0.459);
+    text-align: center;
 }
 
 /* --------- */
-
-/* SECTIONS */
-
-.sections {
-    width: 100%;
-    padding: 50px;
-}
-
-.sections__container {
-    width: 60%;
-    margin: 0 auto;
-}
 
 .separator {
     display: flex;
@@ -212,9 +203,21 @@ nav {
     background-color: #8cc73f63;
 }
 
+/* SECTIONS */
+
+.sections {
+    width: 100%;
+    padding: 50px;
+}
+
+.sections__container {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .sections__title {
     text-align: center;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 .sections__cards {
@@ -326,6 +329,10 @@ nav {
     .sections__card:nth-child(even) .sections__card--img {
         margin-left: 0;
     }
+
+    /* .about__text {
+        text-align: center;
+    } */
 }
 
 /* --------- */
