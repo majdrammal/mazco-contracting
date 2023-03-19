@@ -39,6 +39,14 @@ button:hover {
     color: white;
 }
 
+.black__line {
+    width: 50px;
+    height: 3px;
+    border: none;
+    background-color: black;
+    margin: 5px auto 40px auto;
+}
+
 /* NAV */
 
 nav {
@@ -180,7 +188,7 @@ nav {
 }
 
 .about__text {
-    margin-top: 15px;
+    margin-top: 30px;
     font-size: 17px;
     color: rgba(0, 0, 0, 0.459);
     text-align: center;
@@ -221,7 +229,7 @@ nav {
 
 .sections__title {
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .sections__cards {
@@ -291,14 +299,6 @@ nav {
     align-items: center;
 }
 
-.partners__line {
-    width: 50px;
-    height: 3px;
-    border: none;
-    background-color: #8cc73fc1;
-    margin: 3px 0 20px 0;
-}
-
 .partners__list {
     display: flex;
     flex-wrap: wrap;
@@ -360,10 +360,11 @@ footer {
 
 .news__title {
     text-align: center;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
 }
 
 .news__list {
+    margin-top: 60px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -395,6 +396,10 @@ footer {
     font-size: 14px;
     color:rgba(0, 0, 0, 0.4);
     font-style: italic;
+}
+
+.news__line {
+    align-self: center;
 }
 
 /* --------- */
@@ -455,6 +460,20 @@ footer {
 
     .sections__card:nth-child(even) .sections__card--img {
         margin-left: 0;
+    }
+
+    .news__elem {
+        flex-direction: column;
+        align-self: center;
+        text-align: center;
+    }
+
+    .news__elem--img {
+        margin-right: 0;
+    }
+
+    .news__elem--text {
+        margin-top: 10px;
     }
 
     /* .about__text {

@@ -57,6 +57,7 @@ const Home = () => {
             <div id="about" className="about">
                 <div className="about__container">
                     <h1 className="about__title">About <span className="green">Us</span></h1>
+                    <hr className="black__line" />
                     <p className="about__text">Solid Trade is dedicated to investing in projects that promote the development of healthy green communities. 
 We believe that by investing in green projects and supporting healthy eateries, we can have a positive impact on the lifestyle of the communities in which we operate. By focusing on sustainability and environmentally-friendly practices, we strive to build a healthier world for future generations. 
 Our commitment to building healthy communities extends beyond just financial investments; we actively seek out opportunities to collaborate with local organizations and community leaders to promote wellness and support initiatives that improve the quality of life for everyone; for corporate social responsibility to sticking to standards that are the closest to being eco-friendly.
@@ -71,6 +72,7 @@ At our core, we believe that by working together, we can create a better, health
             <div id="sections" className="sections">
                 <div className="sections__container">
                     <h1 className="sections__title"><span className="green">What</span> We Do</h1>
+                    <hr className="black__line" />
                     <div className="sections__cards">
                         <div className="sections__card">
                             <img src="https://www.neom.com/content/dam/neom/oxagon/c49/oxagon-main-hero-thumbnail.jpg" alt="" className="sections__card--img" />
@@ -118,8 +120,8 @@ At our core, we believe that by working together, we can create a better, health
             </div>
             <div id="partners" className="partners">
                 <div className="partners__container">
-                    <h1 className="partners__title">Our Partners</h1>
-                    <hr className="partners__line" />
+                    <h1 className="partners__title">Our <span className="green">Partners</span></h1>
+                    <hr className="black__line" />
                     <div className="partners__list">
                         <img src={emaar} alt="" className="partner__img" />
                         <img src={meraas} alt="" className="partner__img" />
@@ -138,6 +140,7 @@ At our core, we believe that by working together, we can create a better, health
             <div id="news" className="news">
                 <div className="news__container">
                     <h1 className="news__title"><span className="green">Trending</span> News</h1>
+                    <hr className="black__line news__line" />
                     <div className="news__list">
                         <div className="news__elem">
                             <img src={news1} alt="" className="news__elem--img" />
