@@ -16,6 +16,7 @@ import news2 from './assets/news-2.jpeg';
 import news3 from './assets/news-3.jpeg';
 import news4 from './assets/news-4.jpeg';
 import news5 from './assets/news-5.jpeg';
+import map from './assets/map.PNG'
 
 const Home = () => {
     return (
@@ -185,9 +186,44 @@ At our core, we believe that by working together, we can create a better, health
                     </div>
                 </div>
             </div>
+            <div className="separator">
+                <hr className="separator__left" />
+                <FontAwesomeIcon className="separator__icon" icon="fa-leaf" />
+                <hr className="separator__right" />
+            </div>
+            <div id="contact" className="contact">
+                <div className="contact__container">
+                    <h1 className="contact__title">Get In <span className="green">Touch</span></h1>
+                    <hr className="black__line" />
+                    {/* <div className="contact__inner"> */}
+                        {/* <img src={map} alt="" className="map__img" /> */}
+                        <div className="contact__text">
+                            <div className="contact__address">
+                                <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/BmYJUqXr3kyPwf5R6"><FontAwesomeIcon className="contact__icon" icon="fa-location-pin" /></a>
+                                <h4 className="contact__section">Address</h4>
+                                <p>Dubai Hills, Business Park</p>
+                            </div>
+                            <div className="contact__phone">
+                                <FontAwesomeIcon className="contact__icon" icon="fa-phone" />
+                                <h4 className="contact__section">Phone</h4>
+                                <a href="https://api.whatsapp.com/send/?phone=971507728375&text&type=phone_number&app_absent=0" className="contact__phone">+971507728375</a>
+                                <a href="https://api.whatsapp.com/send/?phone=966536279307&text&type=phone_number&app_absent=0" className="contact__phone">+966536279307</a>
+                                <a href="https://api.whatsapp.com/send/?phone=96171737772&text&type=phone_number&app_absent=0" className="contact__phone">+96171737772</a>
+                                <a href="https://api.whatsapp.com/send/?phone=243827117555&text&type=phone_number&app_absent=0" className="contact__phone">+243827117555</a>
+                            </div>
+                            <div className="contact__email">
+                                <FontAwesomeIcon className="contact__icon" icon="fa-envelope" />
+                                <h4 className="contact__section">Email</h4>
+                                <a href="mailto:trade@solidtrade.me" className="contact__email">trade@solidtrade.me</a>
+                            </div>    
+                        </div>
+                        <img className="map__img" src={map} alt="" />
+                    {/* </div> */}
+                </div>
+            </div>
             <footer>
                 <div className="footer__container">
-                    <img src={logo} alt="" className="footer__logo" />
+                    <a href="#"><img src={logo} alt="" className="footer__logo" /></a>
                     <p className="footer__cr">Copyright &copy; 2023 | Solid Trade </p>
                 </div>
             </footer>
