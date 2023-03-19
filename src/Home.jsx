@@ -11,6 +11,11 @@ import kamoa from './assets/kamoa.jpeg';
 import clab from './assets/clab.jpeg';
 import odoo from './assets/odoo.jpeg';
 import safco from './assets/safco.jpeg';
+import news1 from './assets/news-1.jpeg';
+import news2 from './assets/news-2.jpeg';
+import news3 from './assets/news-3.jpeg';
+import news4 from './assets/news-4.jpeg';
+import news5 from './assets/news-5.jpeg';
 
 const Home = () => {
     return (
@@ -25,7 +30,7 @@ const Home = () => {
                     </div> */}
                     {/* <a href="/" className="nav__logo">Solid Trade</a> */}
                     <div className="nav__links">
-                        <a href="#home" className="nav__link">Home</a>
+                        <a href="#" className="nav__link">Home</a>
                         <a href="#about" className="nav__link">About</a>
                         <a href="#sections" className="nav__link">Sections</a>
                         <a href="#partners" className="nav__link">Partners</a>
@@ -73,7 +78,7 @@ At our core, we believe that by working together, we can create a better, health
                                 <h3 className="sections__card--title">Real Estate & Construction</h3>
                                 <p className="sections__card--sub-title green">Neom KSA</p>
                                 <p className="sections__card--para">We supply construction companies with sustainable construction materials, as well as other eco-friendly services to help develop green cities by implementing green systems within smart cities.</p>
-                                <a target="_blank" href="https://www.solidtrade.me"><button>Visit</button></a>
+                                <a target="_blank" rel="noreferrer" href="https://www.solidtrade.me"><button>Visit</button></a>
                             </div>
                         </div>
                         <div className="sections__card">
@@ -82,7 +87,7 @@ At our core, we believe that by working together, we can create a better, health
                                 <h3 className="sections__card--title">F&B</h3>
                                 <p className="sections__card--sub-title green">The Barn</p>
                                 <p className="sections__card--para">With the intention to make healthy eating easier and more accessible, we became co-founders of a healthy restaurant chain, which we intend to develop in more than 60 countries by the end of 2025.</p>
-                                <a target="_blank" href="https://www.thebarnbeirut.com"><button>Visit</button></a>
+                                <a target="_blank" rel="noreferrer" href="https://www.thebarnbeirut.com"><button>Visit</button></a>
                             </div>
                         </div>
                         <div className="sections__card">
@@ -91,7 +96,7 @@ At our core, we believe that by working together, we can create a better, health
                                 <h3 className="sections__card--title">Logistics</h3>
                                 <p className="sections__card--sub-title green">Trux Logistics</p>
                                 <p className="sections__card--para">Owning an extensive fleet and a long proven track record in the African market, our African company has taken the decision to shift it's fleet into eco-friendly transport options to minimize the environmental impact of logistics.</p>
-                                <a target="_blank" href="https://www.truxlogistics.co"><button>Visit</button></a>
+                                <a target="_blank" rel="noreferrer" href="https://www.truxlogistics.co"><button>Visit</button></a>
                             </div>
                         </div>
                         <div className="sections__card">
@@ -100,7 +105,7 @@ At our core, we believe that by working together, we can create a better, health
                                 <h3 className="sections__card--title">Technology</h3>
                                 <p className="sections__card--sub-title green">Watchroom</p>
                                 <p className="sections__card--para">In an effort to bring people closer together, we are involving ourselves in technological ventures that aim to bridge gaps and enhance connectivity, as well as comfortable living with technologies that improve home automation and energy efficiency.</p>
-                                <a target="_blank" href="https://www.watchroom.tv"><button>Visit</button></a>
+                                <a target="_blank" rel="noreferrer" href="https://www.watchroom.tv"><button>Visit</button></a>
                             </div>
                         </div>
                     </div>
@@ -122,6 +127,58 @@ At our core, we believe that by working together, we can create a better, health
                         <img src={clab} alt="" className="partner__img" />
                         <img src={odoo} alt="" className="partner__img" />
                         <img src={safco} alt="" className="partner__img" />
+                    </div>
+                </div>
+            </div>
+            <div className="separator">
+                <hr className="separator__left" />
+                <FontAwesomeIcon className="separator__icon" icon="fa-leaf" />
+                <hr className="separator__right" />
+            </div>
+            <div id="news" className="news">
+                <div className="news__container">
+                    <h1 className="news__title"><span className="green">Trending</span> News</h1>
+                    <div className="news__list">
+                        <div className="news__elem">
+                            <img src={news1} alt="" className="news__elem--img" />
+                            <div className="news__elem--text">
+                                <h2 className="news__elem--title">Dubai announces $8.7 trillion economic plan to boost trade, investment and global hub status</h2>
+                                <p className="news__elem--date">Published January 18, 2023</p>
+                                <a target="_blank" rel="noreferrer" href="https://www.cnbc.com/2023/01/04/dubai-announces-8point7-trillion-economic-plan-to-boost-trade-investment.html"><button className="news__elem--btn">Read Article</button></a>
+                            </div>
+                        </div>
+                        <div className="news__elem">
+                            <img src={news2} alt="" className="news__elem--img" />
+                            <div className="news__elem--text">
+                                <h2 className="news__elem--title">NEOM: everything to know about Saudi's futuristic city</h2>
+                                <p className="news__elem--date">Published January 4, 2023</p>
+                                <a target="_blank" rel="noreferrer" href="https://www.timeoutriyadh.com/attractions/what-is-neom-saudi-arabia"><button className="news__elem--btn">Read Article</button></a>
+                            </div>
+                        </div>
+                        <div className="news__elem">
+                            <img src={news3} alt="" className="news__elem--img" />
+                            <div className="news__elem--text">
+                                <h2 className="news__elem--title">How the new future of nutrition puts holistic health first</h2>
+                                <p className="news__elem--date">Published January 13, 2023</p>
+                                <a target="_blank" rel="noreferrer" href="https://www.weforum.org/agenda/2023/01/davos23-future-of-nutrition-holistic-health/"><button className="news__elem--btn">Read Article</button></a>
+                            </div>
+                        </div>
+                        <div className="news__elem">
+                            <img src={news4} alt="" className="news__elem--img" />
+                            <div className="news__elem--text">
+                                <h2 className="news__elem--title">Social Interaction Is Critical for Mental and Physical Health</h2>
+                                <p className="news__elem--date">Published June 12, 2017</p>
+                                <a target="_blank" rel="noreferrer" href="https://www.nytimes.com/2017/06/12/well/live/having-friends-is-good-for-you.html"><button className="news__elem--btn">Read Article</button></a>
+                            </div>
+                        </div>
+                        <div className="news__elem">
+                            <img src={news5} alt="" className="news__elem--img" />
+                            <div className="news__elem--text">
+                                <h2 className="news__elem--title">What is the future of green transport in the supply chain?</h2>
+                                <p className="news__elem--date">Published October 6, 2022</p>
+                                <a target="_blank" rel="noreferrer" href="https://www.manutan.co.uk/blog/uncategorised/the-future-of-green-transportation-in-the-supply-chain/"><button className="news__elem--btn">Read Article</button></a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
