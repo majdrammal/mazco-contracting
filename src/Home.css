@@ -350,6 +350,14 @@ footer {
 
 /* CONTACT */
 
+.ending__line {
+    width: 60%;
+    margin: 0 auto;
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.253);
+}
+
 .contact {
     width: 100%;
     padding: 50px;

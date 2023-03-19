@@ -186,15 +186,11 @@ At our core, we believe that by working together, we can create a better, health
                     </div>
                 </div>
             </div>
-            <div className="separator">
-                <hr className="separator__left" />
-                <FontAwesomeIcon className="separator__icon" icon="fa-leaf" />
-                <hr className="separator__right" />
-            </div>
+            <hr className="ending__line" />
             <div id="contact" className="contact">
                 <div className="contact__container">
-                    <h1 className="contact__title">Get In <span className="green">Touch</span></h1>
-                    <hr className="black__line" />
+                    <h1 className="contact__title">Get In Touch</h1>
+                    {/* <hr className="black__line" /> */}
                     {/* <div className="contact__inner"> */}
                         {/* <img src={map} alt="" className="map__img" /> */}
                         <div className="contact__text">
