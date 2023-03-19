@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import React from 'react';
+import React, { useState } from 'react';
 import logo from './assets/logo.png';
 import globe from './assets/globe.png';
 import watchroom from './assets/watchroom.PNG'
@@ -16,9 +16,13 @@ import news2 from './assets/news-2.jpeg';
 import news3 from './assets/news-3.jpeg';
 import news4 from './assets/news-4.jpeg';
 import news5 from './assets/news-5.jpeg';
-import map from './assets/map.PNG'
+import map from './assets/map.PNG';
+import vid from './assets/vid.mp4'
 
 const Home = () => {
+
+    const [toggleVid, setToggleVid] = useState(false);
+
     return (
         <div id="home">
             <nav>
@@ -196,24 +200,38 @@ At our core, we believe that by working together, we can create a better, health
                         <div className="contact__text">
                             <div className="contact__address">
                                 <a target="_blank" rel="noreferrer" href="https://goo.gl/maps/BmYJUqXr3kyPwf5R6"><FontAwesomeIcon className="contact__icon" icon="fa-location-pin" /></a>
-                                <h4 className="contact__section">Address</h4>
-                                <p>Dubai Hills, Business Park</p>
+                                {/* <h4 className="contact__section">Address</h4> */}
+                                <h6>Dubai Hills Business Park</h6>
+                                <p>Dubai, United Arab Emirates</p>
                             </div>
                             <div className="contact__phone">
                                 <FontAwesomeIcon className="contact__icon" icon="fa-phone" />
-                                <h4 className="contact__section">Phone</h4>
-                                <a href="https://api.whatsapp.com/send/?phone=971507728375&text&type=phone_number&app_absent=0" className="contact__phone">+971507728375</a>
-                                <a href="https://api.whatsapp.com/send/?phone=966536279307&text&type=phone_number&app_absent=0" className="contact__phone">+966536279307</a>
-                                <a href="https://api.whatsapp.com/send/?phone=96171737772&text&type=phone_number&app_absent=0" className="contact__phone">+96171737772</a>
-                                <a href="https://api.whatsapp.com/send/?phone=243827117555&text&type=phone_number&app_absent=0" className="contact__phone">+243827117555</a>
+                                {/* <h4 className="contact__section">Phone</h4> */}
+                                <h6>United Arab Emirates</h6>
+                                <a href="https://api.whatsapp.com/send/?phone=971507728375&text&type=phone_number&app_absent=0" className="contact__phone">+971 507 72 8375</a>
+                                <h6>Saudi Arabia</h6>
+                                <a href="https://api.whatsapp.com/send/?phone=966536279307&text&type=phone_number&app_absent=0" className="contact__phone">+966 53 627 9307</a>
+                                <h6>Lebanon</h6>
+                                <a href="https://api.whatsapp.com/send/?phone=96171737772&text&type=phone_number&app_absent=0" className="contact__phone">+961 71 737 772</a>
+                                <h6>Africa</h6>
+                                <a href="https://api.whatsapp.com/send/?phone=243827117555&text&type=phone_number&app_absent=0" className="contact__phone">+243 82 711 7555</a>
                             </div>
                             <div className="contact__email">
                                 <FontAwesomeIcon className="contact__icon" icon="fa-envelope" />
-                                <h4 className="contact__section">Email</h4>
+                                {/* <h4 className="contact__section">Email</h4> */}
+                                <h6>Solid Trade</h6>
                                 <a href="mailto:trade@solidtrade.me" className="contact__email">trade@solidtrade.me</a>
                             </div>    
                         </div>
-                        <img className="map__img" src={map} alt="" />
+                        <div className="map__wrapper">
+                            {
+                                !toggleVid ? (
+                                    <img className="map__img" src={map} alt="" onMouseEnter={() => setToggleVid(true)}/>
+                                ) : (
+                                    <video src={vid} loop autoplay="true" muted onMouseLeave={() => setToggleVid(false)}></video>
+                                )
+                            }
+                        </div>
                     {/* </div> */}
                 </div>
             </div>

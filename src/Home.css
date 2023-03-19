@@ -383,14 +383,15 @@ footer {
 .contact__icon {
     font-size: 30px;
     color: #8DC73F;
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
+    margin-bottom: 20px;
 }
 
-.contact__section {
+/* .contact__section {
     color: #8DC73F;
     margin-bottom: 10px;
     font-size: 25px;
-}
+} */
 
 .contact__phone, .contact__address, .contact__email {
     display: flex;
@@ -399,16 +400,21 @@ footer {
     margin: 0 30px;
 }
 
+.contact h6 {
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
 .contact a, .contact__address p {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.555);
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.map__img {
+.map__img, video {
     margin-top: 40px;
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     border-radius: 20px;
 }
