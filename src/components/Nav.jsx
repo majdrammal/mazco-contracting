@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
-import logo from '../assets/logo.png'
+import logo from '../assets/logo.png';
 
 const Nav = () => {
     return (

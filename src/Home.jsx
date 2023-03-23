@@ -22,8 +22,8 @@ import SectionCard from './home components/ui/SectionCard';
 import NewsElem from './home components/ui/NewsElem';
 import ContactPhone from './home components/ui/ContactPhone';
 import ContactForm from './home components/ContactForm';
+import ramadan from './assets/ramadan.png'
 
-import dlt from './assets/logo-main.png'
 
 const Home = () => {
 
@@ -33,7 +33,10 @@ const Home = () => {
         <div id="home">
             <nav>
                 <div className="nav__container">
-                    <img src={logo} alt="" className="nav__logo" />
+                    <div className="nav__logo--wrapper">
+                        <img src={logo} alt="" className="nav__logo" />
+                        <img className="ramadan__icon" src={ramadan} alt="" />
+                    </div>
                     <div className="nav__links">
                         <a href="#" className="nav__link">Home</a>
                         <a href="#about" className="nav__link">About</a>
