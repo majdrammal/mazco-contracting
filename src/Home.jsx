@@ -23,6 +23,8 @@ import NewsElem from './home components/ui/NewsElem';
 import ContactPhone from './home components/ui/ContactPhone';
 import ContactForm from './home components/ContactForm';
 
+import dlt from './assets/logo-main.png'
+
 const Home = () => {
 
     const [toggleVid, setToggleVid] = useState(false);
