@@ -571,6 +571,11 @@ video {
 /* RESPONSIVENESS */
 
 @media (max-width: 768px) {
+    .ramadan__icon {
+        width: 100px;
+        left: -30px;
+    }
+
     .nav__container {
         justify-content: center;
     }
