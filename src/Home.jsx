@@ -35,7 +35,7 @@ const Home = () => {
                 <div className="nav__container">
                     <div className="nav__logo--wrapper">
                         <img src={logo} alt="" className="nav__logo" />
-                        <img className="ramadan__icon" src={ramadan} alt="" />
+                        {/* <img className="ramadan__icon" src={ramadan} alt="" /> */}
                     </div>
                     <div className="nav__links">
                         <a href="#" className="nav__link">Home</a>
